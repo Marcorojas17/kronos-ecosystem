@@ -266,6 +266,5 @@ if __name__ == "__main__":
     print(f"\nHealth: {health['status']} - valido:{health['valido']} - breath:{health['breath_hash'][:16]}...")
     print(f"\nURLs: https://kronos-legado.digital/v/{FOLIO_MAESTRO} | https://sepolia.etherscan.io/tx/{TX_MAESTRA}")
 print("Dictamen 10/10:")
-Respiración 51/49: inhale() lee primer_manifiesto.txt (crea si no existe) verificando folio, genesis, sello, polaridad 51% HUMANO. exhale() escribe sello_kronos.json con merge preservando firma web3.pulse(cycles) latido completo con delay 0.51s (51% humano) - log a cadena_custodia.log tag [BREATHER:folio]validate_genesis() ISO A8.28 valida regex folio 16 dígitos, genesis 64 hex, sello, TX + hashes manifiesto base/exthealth_check() para API /verifica/5204160405358537 - retorna ALIVE + confianza 4/4Logs: genesis_breath.log JSONL + cadena_custodia.log para NOM-151 Art.38Manifiestos inmutables: MANIFIESTO_BASE = FOLIO:5204160405358537|PERITO:kronosproyecto@hotmail.com|GENESIS:41a3683b...Ejecuta:bashpython core/genesis_breather.py
 # -> audit/primer_manifiesto.txt + audit/sello_kronos.json + audit/genesis_breath.log
 python -c "from core.genesis_breather import GenesisBreather; print(GenesisBreather().pulse(3))"

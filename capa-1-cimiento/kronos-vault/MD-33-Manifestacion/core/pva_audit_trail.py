@@ -195,6 +195,6 @@ if __name__ == "__main__":
     trail.genera_cadena()
     trail.auditoria_iso_nom()
     trail.registrar_evento("MARKETPLACE", {"nivel_1": "$49 PDF+QR", "nivel_3": "$199 PACK", "folio": FOLIO_MAESTRO})
-    print(f"\nDICTAMEN 10/10 - audit/ listo - folio {FOLIO_MAESTRO}")Dictamen 10/10:
+    print(f"\nDICTAMEN 10/10 - audit/ listo - folio {FOLIO_MAESTRO}")
 Clase PVAAuditTrail con tu folio 5204160405358537, genesis 41a3683b..., sello KRONOS-TRACE..., TX 0x8ca8e84e..., SAFE 2607146379465valida_paquete() regex ISO A8.28: folio 16 dígitos, genesis 64 hex, sello, TX, safelog() escribe cadena_custodia.log con formato [UTC] [TAG:folio] accion - detalle - sello - perito - admitido MPregistrar_evento() NOM-151 Art.38 con payload JSON + timestampgenera_sello() merge con sello_kronos.json existente (no lo borra)auditoria_iso_nom() genera AUDITORIA_ISO_NOM_PVA_5204160405358537.md lista para $199Main genera todo: sello + cadena + auditoría + marketplace logEjecuta:bashpython core/pva_audit_trail.py
 # -> audit/cadena_custodia.log + audit/sello_kronos.json + audit/AUDITORIA_ISO_NOM_PVA_5204160405358537.md
