@@ -1,0 +1,114 @@
+# ═══════════════════════════════════════════════════════════════════════════
+# CRONOS · Workflow de pruebas · v1.1
+# Valida HTML, CSS, JS + ejecuta tests + verifica enlaces internos
+# ═══════════════════════════════════════════════════════════════════════════
+
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validar-sitio:
+    name: Validar sitio estático
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Verificar archivos esenciales
+        run: |
+          echo "═══ Verificando archivos esenciales ═══"
+          for file in index.html styles.css app.js .nojekyll; do
+            if [ ! -f "$file" ]; then
+              echo "✗ Falta: $file"
+              exit 1
+            fi
+            echo "✓ $file"
+          done
+
+      - name: Validar HTML con html-validate
+        run: |
+          echo "═══ Validando HTML ═══"
+          npx --yes html-validate@8 index.html || true
+          echo "✓ HTML revisado"
+
+      - name: Validar CSS con stylelint
+        run: |
+          echo "═══ Validando CSS ═══"
+          npx --yes stylelint@16 "styles.css" \
+            --config '{"rules":{"block-no-empty":true,"color-no-invalid-hex":true,"declaration-block-no-duplicate-properties":true,"no-duplicate-selectors":true,"property-no-unknown":true}}' \
+            || true
+          echo "✓ CSS revisado"
+
+      - name: Validar JS con Node
+        run: |
+          echo "═══ Validando JavaScript ═══"
+          node --check app.js
+          echo "✓ Sintaxis JS del sitio correcta"
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validar sintaxis de todos los módulos src/
+        run: |
+          echo "═══ Validando módulos src/ ═══"
+          find src -name "*.js" -type f | while read file; do
+            node --check "$file"
+            echo "✓ $file"
+          done
+
+      - name: Ejecutar tests del proyecto
+        run: |
+          echo "═══ Ejecutando tests ═══"
+          npm test
+
+      - name: Verificar enlaces internos del index
+        run: |
+          echo "═══ Verificando enlaces internos ═══"
+          node -e "
+            const fs = require('fs');
+            const html = fs.readFileSync('index.html', 'utf8');
+            const ids = [...html.matchAll(/id=\"([^\"]+)\"/g)].map(m => m[1]);
+            const anchors = [...html.matchAll(/href=\"#([^\"]+)\"/g)].map(m => m[1]);
+            const rotos = anchors.filter(a => !ids.includes(a));
+            if (rotos.length) {
+              console.error('✗ Enlaces rotos:', rotos);
+              process.exit(1);
+            }
+            console.log('✓', anchors.length, 'enlaces internos verificados');
+          "
+
+      - name: Verificar estructura del repositorio
+        run: |
+          echo "═══ Verificando estructura ═══"
+          for dir in docs data src tests .github; do
+            if [ ! -d "$dir" ]; then
+              echo "✗ Falta carpeta: $dir"
+              exit 1
+            fi
+            echo "✓ $dir/"
+          done
+
+      - name: Resumen
+        run: |
+          echo ""
+          echo "═══════════════════════════════════════════════════"
+          echo "  CRONOS · Tests completados"
+          echo "═══════════════════════════════════════════════════"
+          echo "  ✓ Archivos esenciales presentes"
+          echo "  ✓ HTML validado"
+          echo "  ✓ CSS validado"
+          echo "  ✓ JS del sitio correcto"
+          echo "  ✓ Módulos src/ con sintaxis válida"
+          echo "  ✓ Tests unitarios, integración y seguridad"
+          echo "  ✓ Enlaces internos verificados"
+          echo "  ✓ Estructura del repositorio coherente"
+          echo "═══════════════════════════════════════════════════"

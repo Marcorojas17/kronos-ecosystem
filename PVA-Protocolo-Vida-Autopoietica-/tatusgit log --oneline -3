@@ -1,0 +1,201 @@
+diff --git a/index.html.bak b/index.html.bak
+index 281c072..3f45305 100644
+--- a/index.html.bak
++++ b/index.html.bak
+@@ -1,12 +1,284 @@
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+-    <meta charset="UTF-8">
+-    <meta http-equiv="refresh" content="0; url=
+web/index.html">
+-    <title>KRONOS 360 - Oráculo</title>
+-    <script>window.location.href = "web/index.h
+tml"</script>
++<meta charset="UTF-8">
++<meta name="viewport" content="width=device-wid
+th, initial-scale=1.0">
++<title>PVA · Protocolo Vida Autopoiética</tit
+le>
++<meta name="description" content="KRONOS V18 PR
+O — Sistema de registro, verificación y ancla
+je digital. MD-33 Motor Dual.">
++<style>
++  :root {
++    --bg: #0a0a0a;
++    --panel: #0f0f0f;
++    --fg: #e8e8e8;
++    --accent: #00ff9d;
++    --dim: #666;
++    --border: #1f1f1f;
++  }
++  * { box-sizing: border-box; margin: 0; paddin
+g: 0; }
++  body {
++    background: var(--bg);
++    color: var(--fg);
++    font-family: "SF Mono", "Menlo", "Consolas"
+, monospace;
++    line-height: 1.6;
++    min-height: 100vh;
++    padding: 2rem 1rem;
++  }
++  .contenedor { max-width: 820px; margin: 0 aut
+o; }
++
++  .cabecera {
++    text-align: center;
++    padding: 2rem 1rem 1.5rem;
++    border-bottom: 1px solid var(--border);
++    margin-bottom: 2rem;
++  }
++  .ojo {
++    font-size: 3.5rem;
++    letter-spacing: 0.4rem;
++    color: var(--accent);
++    margin-bottom: 0.8rem;
++    text-shadow: 0 0 20px rgba(0,255,157,0.35);
+
++  }
++  h1 {
++    font-size: 1.5rem;
++    letter-spacing: 0.25rem;
++    color: var(--accent);
++    margin-bottom: 0.4rem;
++  }
++  .subtitulo {
++    color: var(--dim);
++    font-size: 0.8rem;
++    letter-spacing: 0.15rem;
++    text-transform: uppercase;
++  }
++  .estado {
++    display: inline-block;
++    margin-top: 1rem;
++    padding: 0.3rem 0.8rem;
++    border: 1px solid var(--accent);
++    border-radius: 999px;
++    color: var(--accent);
++    font-size: 0.7rem;
++    letter-spacing: 0.1rem;
++  }
++
++  section {
++    border: 1px solid var(--border);
++    border-radius: 8px;
++    padding: 1.5rem;
++    margin-bottom: 1.5rem;
++    background: var(--panel);
++  }
++  h2 {
++    font-size: 0.85rem;
++    letter-spacing: 0.2rem;
++    text-transform: uppercase;
++    color: var(--accent);
++    margin-bottom: 1rem;
++    padding-bottom: 0.6rem;
++    border-bottom: 1px solid var(--border);
++  }
++
++  .decreto {
++    text-align: center;
++    font-style: italic;
++    color: var(--accent);
++    font-size: 1.05rem;
++    padding: 1rem 0;
++    line-height: 1.8;
++  }
++
++  .grid {
++    display: grid;
++    grid-template-columns: repeat(auto-fit, min
+max(220px, 1fr));
++    gap: 1rem;
++  }
++  .tarjeta {
++    display: block;
++    border: 1px solid var(--border);
++    border-radius: 6px;
++    padding: 1rem;
++    text-decoration: none;
++    color: var(--fg);
++    transition: border-color 0.2s, transform 0.
+2s;
++  }
++  .tarjeta:hover {
++    border-color: var(--accent);
++    transform: translateY(-2px);
++  }
++  .tarjeta .titulo {
++    color: var(--accent);
++    font-size: 0.8rem;
++    letter-spacing: 0.1rem;
++    text-transform: uppercase;
++    margin-bottom: 0.4rem;
++  }
++  .tarjeta .desc {
++    color: var(--dim);
++    font-size: 0.75rem;
++    line-height: 1.5;
++  }
++
++  .dato {
++    display: flex;
++    justify-content: space-between;
++    align-items: baseline;
++    gap: 1rem;
++    padding: 0.6rem 0;
++    border-bottom: 1px solid var(--border);
++    font-size: 0.85rem;
++  }
++  .dato:last-child { border-bottom: none; }
++  .dato .clave {
++    color: var(--dim);
++    font-size: 0.7rem;
++    letter-spacing: 0.1rem;
++    text-transform: uppercase;
++    flex-shrink: 0;
++  }
++  .dato .valor {
++    color: var(--fg);
++    word-break: break-all;
++    text-align: right;
++  }
++  .dato .valor.accent { color: var(--accent); }
+
++
++  .ojos {
++    display: grid;
++    grid-template-columns: 1fr 1fr;
++    gap: 1rem;
++    text-align: center;
++  }
++  .ojos .lado {
++    border: 1px solid var(--border);
++    border-radius: 6px;
++    padding: 1rem;
++  }
++  .ojos .simbolo {
++    font-size: 2rem;
++    color: var(--accent);
++    display: block;
++    margin-bottom: 0.5rem;
++  }
++  .ojos .desc {
++    font-size: 0.75rem;
++    color: var(--dim);
++    line-height: 1.5;
++  }
++  @media (max-width: 500px) {
++    .ojos { grid-template-columns: 1fr; }
++  }
++
++  footer {
++    text-align: center;
++    color: var(--dim);
++    font-size: 0.7rem;
++    padding: 2rem 1rem 1rem;
++    border-top: 1px solid var(--border);
++    letter-spacing: 0.1rem;
++  }
++  footer a { color: var(--accent); text-decorat

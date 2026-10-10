@@ -1,0 +1,102 @@
+{
+  "_meta": {
+    "file": "numbers_1_9.json",
+    "version": "1.0.0",
+    "description": "Números base 1-9 como patrimonio cultural. NO predice. Interpretación simbólica.",
+    "tag": "#cultura",
+    "disclaimer": "Significado tradicional, no científico. No usar para decisiones personales."
+  },
+  "traditions": ["pitagórica", "cabalística", "islámica", "mesoamericana"],
+  "numbers": [
+    {
+      "value": 1,
+      "name_es": "Uno",
+      "roman": "I",
+      "symbol": "☉",
+      "cultural_meaning": "Unidad, origen, individualidad",
+      "traditions": ["pitagórica", "cabalística"],
+      "association_traditional": "El punto, el inicio, el yo",
+      "tag": "#cultura"
+    },
+    {
+      "value": 2,
+      "name_es": "Dos",
+      "roman": "II",
+      "symbol": "☽",
+      "cultural_meaning": "Dualidad, polaridad, relación",
+      "traditions": ["pitagórica", "cabalística", "mesoamericana"],
+      "association_traditional": "La pareja, el espejo, la cooperación",
+      "tag": "#cultura"
+    },
+    {
+      "value": 3,
+      "name_es": "Tres",
+      "roman": "III",
+      "symbol": "△",
+      "cultural_meaning": "Expresión, creatividad, triunidad",
+      "traditions": ["pitagórica", "cristiana", "islámica"],
+      "association_traditional": "El triángulo, la manifestación, la palabra",
+      "tag": "#cultura"
+    },
+    {
+      "value": 4,
+      "name_es": "Cuatro",
+      "roman": "IV",
+      "symbol": "□",
+      "cultural_meaning": "Estructura, orden, estabilidad",
+      "traditions": ["pitagórica", "mesoamericana"],
+      "association_traditional": "El cuadrado, los cuatro elementos, los cuatro rumbos",
+      "tag": "#cultura"
+    },
+    {
+      "value": 5,
+      "name_es": "Cinco",
+      "roman": "V",
+      "symbol": "✦",
+      "cultural_meaning": "Cambio, movimiento, libertad",
+      "traditions": ["pitagórica"],
+      "association_traditional": "El pentágono, los sentidos, la aventura",
+      "tag": "#cultura"
+    },
+    {
+      "value": 6,
+      "name_es": "Seis",
+      "roman": "VI",
+      "symbol": "✡",
+      "cultural_meaning": "Armonía, equilibrio, cuidado",
+      "traditions": ["pitagórica", "cabalística"],
+      "association_traditional": "La estrella de seis puntas, la belleza",
+      "tag": "#cultura"
+    },
+    {
+      "value": 7,
+      "name_es": "Siete",
+      "roman": "VII",
+      "symbol": "✧",
+      "cultural_meaning": "Introspección, análisis, espiritualidad",
+      "traditions": ["pitagórica", "cabalística", "islámica", "cristiana"],
+      "association_traditional": "Los siete cielos, los siete días, el misterio",
+      "tag": "#cultura"
+    },
+    {
+      "value": 8,
+      "name_es": "Ocho",
+      "roman": "VIII",
+      "symbol": "∞",
+      "cultural_meaning": "Poder material, ciclos, equilibrio cósmico",
+      "traditions": ["pitagórica", "islámica", "asiática"],
+      "association_traditional": "El infinito vertical, la justicia, la renovación",
+      "tag": "#cultura"
+    },
+    {
+      "value": 9,
+      "name_es": "Nueve",
+      "roman": "IX",
+      "symbol": "◉",
+      "cultural_meaning": "Culminación, cierre, sabiduría",
+      "traditions": ["pitagórica", "islámica", "mesoamericana"],
+      "association_traditional": "El final del ciclo, la compasión, la plenitud",
+      "tag": "#cultura"
+    }
+  ]
+}

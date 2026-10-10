@@ -1,0 +1,37 @@
+{
+  "proyecto": "KRONOS ECOSYSTEM",
+  "creador": "Marco Antonio Rojas Valdovinos",
+  "fundador_id": "#000",
+  "firma": "DMD-33 ●_○ S.A. DE C.V.",
+  "copyright": "© 2026 Marco Antonio Rojas Valdovinos",
+  "onboarding": {
+    "bloqueado": true,
+    "razon": "Sin S.A. de C.V. constituida",
+    "bloqueadores": [
+      "Falta constitución de S.A. de C.V.",
+      "Falta dictamen legal sobre token KRN",
+      "Falta auditoría externa de smart contracts",
+      "Falta NOM-151 certificada",
+      "Falta decisión sobre emisión de NFTs"
+    ],
+    "desbloqueadores": [
+      "Constituir S.A. de C.V. ante notario",
+      "Contratar abogado Web3",
+      "Completar auditoría Certik",
+      "Registrar marcas en IMPI",
+      "Cumplir NOM-151 al menos en fase de trámite"
+    ]
+  },
+  "reglas": [
+    "No onboarding hasta S.A. de C.V. constituida",
+    "No ventas hasta auditoría externa",
+    "No emisión de tokens hasta dictamen CNBV",
+    "No promesas de retorno económico"
+  ],
+  "contacto": {
+    "email": "contacto@kronos3hash.online",
+    "telefono": "+52 722 586 2335"
+  },
+  "sello": "○_●",
+  "lema": "El legado no se hereda. Se firma."
+}

@@ -1,0 +1,32 @@
+{
+  "name": "CRONOS — Sistema de Interpretación Temporal y Simbólica",
+  "short_name": "CRONOS",
+  "description": "Arquitectura filosófica y tecnológica que estudia cómo los símbolos, los patrones y el tiempo se convierten en decisiones humanas.",
+  "start_url": "/PROYECTO-KRONOS/",
+  "scope": "/PROYECTO-KRONOS/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0a0a0f",
+  "theme_color": "#0a0a0f",
+  "lang": "es",
+  "dir": "ltr",
+  "categories": [
+    "education",
+    "philosophy",
+    "research"
+  ],
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

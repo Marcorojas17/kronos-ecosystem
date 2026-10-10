@@ -1,0 +1,114 @@
+{
+  "proyecto": "KRONOS ECOSYSTEM",
+  "version": "v20.1-tesis-integrada",
+  "fundador": "Marco Antonio Rojas Valdovinos",
+  "fundador_id": "#000",
+  "firma": "DMD-33 ●_○ S.A. DE C.V.",
+  "fecha_actualizacion": "2026-10-03",
+  "ubicacion": "Toluca/Lerma, Estado de México",
+  "repo": "https://github.com/Marcorojas17/kronos-ecosystem",
+  "pages": "https://Marcorojas17.github.io/kronos-ecosystem/",
+  "doc_maestro": "docs/INSTRUCCIONES-Y-TESIS.md",
+
+  "estado_global": {
+    "fase": "PRE-ALPHA",
+    "ejecucion_real": "0%",
+    "plano": "98.7%",
+    "terreno": "0%",
+    "semaforo": "ROJO CRITICO",
+    "modo": "CONSTRUCCION MANUAL $0"
+  },
+
+  "presupuesto": {
+    "actual_usd": 11500,
+    "requerido_minimo_usd": 25000,
+    "requerido_real_usd": 50000,
+    "deficit_usd": -38500,
+    "runway_dias": 0
+  },
+
+  "modelo_negocio": {
+    "estado": "🟢 DEFINIDO",
+    "cliente": "Contacto Inmobiliario #1",
+    "precio": "$2,000 MXN/mes",
+    "mvp": "capturar-origen + verificador-empresa",
+    "fecha_primer_peso": "15/10/2026",
+    "monto_objetivo": "$2,000 MXN"
+  },
+
+  "total_archivos_base": 127,
+  "total_archivos_con_obras": 149,
+  "total_carpetas_nivel1": 11,
+  "total_subcarpetas_nivel2": 28,
+
+  "arquitectura_capas": {
+    "CAPA_0": "Fundacion - Acta, Merkle Roots, Clave Publica, Anclajes ETH",
+    "CAPA_1": "Criptografia - Ed25519, SHA-256/SHA3-512, ML-DSA-65, RFC 8785, AES-GCM-256",
+    "CAPA_2": "Esquema - registro.schema.json v2.0.1, firmas hibridas",
+    "CAPA_3": "Pipeline - capturar-origen, verificador-empresa, notario-digital, crear-empresa",
+    "CAPA_4": "Agentes - 6 Python (090-095) + 6 JS Kintsugi (001, 081-086)",
+    "CAPA_5": "Ciudad - Constitucion, Derechos, 100 plazas, token KRO"
+  },
+
+  "modulos": ["MIS", "MAS", "MRA", "MTI", "MAR"],
+
+  "registros_safe_creative": [
+    "2607086319439",
+    "2607146379465",
+    "2608056639878",
+    "2608096674952",
+    "2608096678240",
+    "2608156740085",
+    "2608166741669",
+    "2608176749334"
+  ],
+
+  "anclajes_ethereum": [
+    "0x8ca8e84e1258abac9acb29d14d25114e4775d782ecfda51ae29933247ed2970e",
+    "0xd2c2a7e128e6c81b689b3b0d9e1b31a4f6bf8df0391b7b6c05e7daa7fb895774c"
+  ],
+
+  "pipeline_e2e": {
+    "status": "VERIFICADO",
+    "fecha_prueba": "2026-10-01",
+    "agente": "Sra. Rios",
+    "resultado": "VERIFICADO"
+  },
+
+  "fases": {
+    "FASE_0": { "nombre": "Contencion", "duracion": "48 horas", "estado": "0%" },
+    "FASE_1": { "nombre": "Legal y Financiera", "duracion": "Semanas 1-4", "estado": "0%" },
+    "FASE_2": { "nombre": "Tecnica y Seguridad", "duracion": "Meses 2-3", "estado": "0%" },
+    "FASE_3": { "nombre": "Auditoria", "duracion": "Mes 4", "estado": "0%" },
+    "FASE_4": { "nombre": "Escalamiento", "duracion": "Meses 5-6", "estado": "0%" },
+    "FASE_5": { "nombre": "Cuantico", "duracion": "2027-2060", "estado": "0%" },
+    "FASE_6": { "nombre": "Legado", "duracion": "2060-2099", "estado": "0%" }
+  },
+
+  "fallas_criticas": [
+    { "id": 1, "nombre": "Financiera", "estado": "ROJO" },
+    { "id": 2, "nombre": "Legal", "estado": "ROJO" },
+    { "id": 3, "nombre": "Tecnica", "estado": "ROJO" },
+    { "id": 4, "nombre": "Seguridad Residual", "estado": "ROJO" },
+    { "id": 5, "nombre": "Estrategica", "estado": "ROJO" }
+  ],
+
+  "contactos_clave": [
+    { "nombre": "Contacto Inmobiliario #1", "sector": "Salud + Origen", "estado": "Dijo arranquemos" },
+    { "nombre": "Contacto Tecnico #1", "sector": "SDOps", "estado": "Cadena coincide 1:1" }
+  ],
+
+  "contacto": {
+    "email": "contacto@kronos3hash.online",
+    "email_personal": "marco.a.rojas.v@hotmail.com",
+    "telefono": "+52 722 586 2335"
+  },
+
+  "licencia": {
+    "codigo": "MIT",
+    "contenido": "CC BY-NC-SA 4.0"
+  },
+
+  "sello": "○_●",
+  "lema": "El legado no se hereda. Se firma."
+}

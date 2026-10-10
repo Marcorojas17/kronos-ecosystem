@@ -1,0 +1,11 @@
+{
+  "name": "@kronos/docs",
+  "version": "20.1.0",
+  "private": true,
+  "description": "KRONOS Docs - Hub estático para GitHub Pages",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'static - no build needed'",
+    "clean": "echo 'nothing to clean'"
+  }
+}

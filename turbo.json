@@ -1,0 +1,60 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": [
+        "src/**",
+        "app/**",
+        "lib/**",
+        "package.json",
+        "tsconfig.json",
+        "next.config.js",
+        "tailwind.config.js"
+      ],
+      "outputs": [
+        ".next/**",
+        "dist/**",
+        "build/**",
+        "!.next/cache/**"
+      ]
+    },
+    "test": {
+      "dependsOn": ["build"],
+      "inputs": [
+        "src/**",
+        "test/**",
+        "tests/**",
+        "package.json"
+      ],
+      "outputs": ["coverage/**"]
+    },
+    "lint": {
+      "inputs": [
+        "src/**",
+        "app/**",
+        "lib/**",
+        "package.json",
+        ".eslintrc.json"
+      ]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "clean": {
+      "cache": false
+    }
+  },
+  "globalDependencies": [
+    ".env",
+    ".env.local",
+    "tsconfig.json"
+  ],
+  "globalEnv": [
+    "NODE_ENV",
+    "NEXT_PUBLIC_CONTRACT_ADDRESS",
+    "NEXT_PUBLIC_CHAIN_ID"
+  ]
+}

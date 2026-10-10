@@ -1,0 +1,56 @@
+{
+  "_meta": {
+    "file": "major_lines.json",
+    "version": "1.0.0",
+    "description": "Líneas principales de la mano como patrimonio cultural. NO predice. NO diagnostica.",
+    "tag": "#cultura",
+    "disclaimer": "Interpretación tradicional, sin base médica. No usar para diagnóstico ni decisiones."
+  },
+  "traditions": ["india", "romani", "europea", "china"],
+  "lines": [
+    {
+      "id": "life_line",
+      "name_es": "Línea de la vida",
+      "name_alt": "Línea vital",
+      "position_traditional": "Curva alrededor del monte de Venus, rodeando el pulgar",
+      "cultural_meaning": "Vitalidad, energía, vínculo con la existencia",
+      "traditions": ["india", "romani", "europea", "china"],
+      "medical_claim": false,
+      "note": "En ninguna tradición seria indica 'duración' de la vida. Esa lectura es un malentendido moderno.",
+      "tag": "#cultura"
+    },
+    {
+      "id": "head_line",
+      "name_es": "Línea de la cabeza",
+      "name_alt": "Línea mental",
+      "position_traditional": "Transversa en el centro de la palma",
+      "cultural_meaning": "Pensamiento, atención, manera de razonar",
+      "traditions": ["india", "romani", "europea", "china"],
+      "medical_claim": false,
+      "note": "Tradicionalmente asociada al modo de procesar ideas, no a capacidad intelectual.",
+      "tag": "#cultura"
+    },
+    {
+      "id": "heart_line",
+      "name_es": "Línea del corazón",
+      "name_alt": "Línea afectiva",
+      "position_traditional": "Transversa superior, bajo los dedos",
+      "cultural_meaning": "Vida afectiva, vínculos emocionales, forma de amar",
+      "traditions": ["india", "romani", "europea", "china"],
+      "medical_claim": false,
+      "note": "Se refiere al modo de vincularse, no a salud cardíaca.",
+      "tag": "#cultura"
+    },
+    {
+      "id": "fate_line",
+      "name_es": "Línea del destino",
+      "name_alt": "Línea del saturno",
+      "position_traditional": "Vertical desde la base hacia el dedo medio",
+      "cultural_meaning": "Sentido de propósito, dirección vital, vocación percibida",
+      "traditions": ["india", "europea"],
+      "medical_claim": false,
+      "note": "No todos la tienen. Su ausencia no significa nada negativo en la tradición.",
+      "tag": "#cultura"
+    }
+  ]
+}

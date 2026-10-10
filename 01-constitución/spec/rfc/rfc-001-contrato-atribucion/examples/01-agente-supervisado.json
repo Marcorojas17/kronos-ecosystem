@@ -1,0 +1,8 @@
+{
+  "id": "did:kronos:agent:001",
+  "emisor": "did:kronos:human:marco",
+  "sujeto": "did:kronos:agent:meta-ai",
+  "autonomia": 1,
+  "umbral_intervencion": 0.7,
+  "timestamp": "2026-10-04T00:00:00Z"
+}

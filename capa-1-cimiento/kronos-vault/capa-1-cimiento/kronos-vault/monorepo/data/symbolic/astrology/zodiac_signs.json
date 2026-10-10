@@ -1,0 +1,156 @@
+{
+  "_meta": {
+    "file": "zodiac_signs.json",
+    "version": "1.0.0",
+    "description": "12 signos zodiacales como patrimonio cultural. NO predice. Interpretación simbólica.",
+    "tag": "#cultura",
+    "disclaimer": "Significado tradicional, no científico. No usar para decisiones personales."
+  },
+  "tradition": "helenística",
+  "signs": [
+    {
+      "id": "aries",
+      "name_es": "Aries",
+      "symbol": "♈",
+      "element": "fuego",
+      "modality": "cardinal",
+      "dates_traditional": ["03-21", "04-19"],
+      "ruler_traditional": "Marte",
+      "cultural_meaning": "Inicio, impulso, energía pionera",
+      "origin": "Tradición helenística, recogida de la astronomía babilónica",
+      "tag": "#cultura"
+    },
+    {
+      "id": "tauro",
+      "name_es": "Tauro",
+      "symbol": "♉",
+      "element": "tierra",
+      "modality": "fijo",
+      "dates_traditional": ["04-20", "05-20"],
+      "ruler_traditional": "Venus",
+      "cultural_meaning": "Estabilidad, recursos, placer sensorial",
+      "origin": "Tradición helenística",
+      "tag": "#cultura"
+    },
+    {
+      "id": "geminis",
+      "name_es": "Géminis",
+      "symbol": "♊",
+      "element": "aire",
+      "modality": "mutable",
+      "dates_traditional": ["05-21", "06-20"],
+      "ruler_traditional": "Mercurio",
+      "cultural_meaning": "Comunicación, dualidad, intercambio",
+      "origin": "Tradición helenística",
+      "tag": "#cultura"
+    },
+    {
+      "id": "cancer",
+      "name_es": "Cáncer",
+      "symbol": "♋",
+      "element": "agua",
+      "modality": "cardinal",
+      "dates_traditional": ["06-21", "07-22"],
+      "ruler_traditional": "Luna",
+      "cultural_meaning": "Hogar, cuidado, memoria emocional",
+      "origin": "Tradición helenística",
+      "tag": "#cultura"
+    },
+    {
+      "id": "leo",
+      "name_es": "Leo",
+      "symbol": "♌",
+      "element": "fuego",
+      "modality": "fijo",
+      "dates_traditional": ["07-23", "08-22"],
+      "ruler_traditional": "Sol",
+      "cultural_meaning": "Expresión, liderazgo, creatividad",
+      "origin": "Tradición helenística",
+      "tag": "#cultura"
+    },
+    {
+      "id": "virgo",
+      "name_es": "Virgo",
+      "symbol": "♍",
+      "element": "tierra",
+      "modality": "mutable",
+      "dates_traditional": ["08-23", "09-22"],
+      "ruler_traditional": "Mercurio",
+      "cultural_meaning": "Análisis, servicio, método",
+      "origin": "Tradición helenística",
+      "tag": "#cultura"
+    },
+    {
+      "id": "libra",
+      "name_es": "Libra",
+      "symbol": "♎",
+      "element": "aire",
+      "modality": "cardinal",
+      "dates_traditional": ["09-23", "10-22"],
+      "ruler_traditional": "Venus",
+      "cultural_meaning": "Equilibrio, relación, justicia",
+      "origin": "Tradición helenística",
+      "tag": "#cultura"
+    },
+    {
+      "id": "escorpio",
+      "name_es": "Escorpio",
+      "symbol": "♏",
+      "element": "agua",
+      "modality": "fijo",
+      "dates_traditional": ["10-23", "11-21"],
+      "ruler_traditional": "Marte (Plutón en tradición moderna)",
+      "cultural_meaning": "Transformación, profundidad, misterio",
+      "origin": "Tradición helenística",
+      "tag": "#cultura"
+    },
+    {
+      "id": "sagitario",
+      "name_es": "Sagitario",
+      "symbol": "♐",
+      "element": "fuego",
+      "modality": "mutable",
+      "dates_traditional": ["11-22", "12-21"],
+      "ruler_traditional": "Júpiter",
+      "cultural_meaning": "Búsqueda, expansión, sentido",
+      "origin": "Tradición helenística",
+      "tag": "#cultura"
+    },
+    {
+      "id": "capricornio",
+      "name_es": "Capricornio",
+      "symbol": "♑",
+      "element": "tierra",
+      "modality": "cardinal",
+      "dates_traditional": ["12-22", "01-19"],
+      "ruler_traditional": "Saturno",
+      "cultural_meaning": "Estructura, tiempo, responsabilidad",
+      "origin": "Tradición helenística",
+      "tag": "#cultura"
+    },
+    {
+      "id": "acuario",
+      "name_es": "Acuario",
+      "symbol": "♒",
+      "element": "aire",
+      "modality": "fijo",
+      "dates_traditional": ["01-20", "02-18"],
+      "ruler_traditional": "Saturno (Urano en tradición moderna)",
+      "cultural_meaning": "Innovación, comunidad, visión",
+      "origin": "Tradición helenística",
+      "tag": "#cultura"
+    },
+    {
+      "id": "piscis",
+      "name_es": "Piscis",
+      "symbol": "♓",
+      "element": "agua",
+      "modality": "mutable",
+      "dates_traditional": ["02-19", "03-20"],
+      "ruler_traditional": "Júpiter (Neptuno en tradición moderna)",
+      "cultural_meaning": "Disolución, empatía, imaginación",
+      "origin": "Tradición helenística",
+      "tag": "#cultura"
+    }
+  ]
+}

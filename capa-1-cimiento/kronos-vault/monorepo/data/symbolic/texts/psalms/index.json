@@ -1,0 +1,61 @@
+{
+  "_meta": {
+    "file": "psalms/index.json",
+    "version": "1.0.0",
+    "description": "Referencias culturales a salmos como patrimonio textual. NO controla sistemas. NO predice.",
+    "tag": "#cultura",
+    "disclaimer": "No existe evidencia científica de que los salmos funcionen como códigos capaces de controlar internet, la computación o cualquier sistema informático. Como concepto cultural y artístico, sí se estudia."
+  },
+  "tradition": "hebrea",
+  "total_traditional": 150,
+  "featured": [
+    {
+      "id": "salmo_001",
+      "name_es": "Salmo 1",
+      "themes": ["rectitud", "consejo", "camino"],
+      "structure": "didáctico",
+      "cultural_use": "Apertura del salterio, contraste entre caminos",
+      "tag": "#cultura"
+    },
+    {
+      "id": "salmo_023",
+      "name_es": "Salmo 23",
+      "themes": ["pastoreo", "confianza", "guía", "consuelo"],
+      "structure": "himno de confianza",
+      "cultural_use": "Liturgia, consuelo, meditación",
+      "tag": "#cultura"
+    },
+    {
+      "id": "salmo_051",
+      "name_es": "Salmo 51 (Miserere)",
+      "themes": ["arrepentimiento", "purificación", "renovación"],
+      "structure": "súplica penitencial",
+      "cultural_use": "Liturgia penitencial, tradición musical",
+      "tag": "#cultura"
+    },
+    {
+      "id": "salmo_091",
+      "name_es": "Salmo 91",
+      "themes": ["protección", "refugio", "confianza"],
+      "structure": "salmo de protección",
+      "cultural_use": "Devoción popular, uso en contextos de temor",
+      "tag": "#cultura"
+    },
+    {
+      "id": "salmo_119",
+      "name_es": "Salmo 119",
+      "themes": ["ley", "palabra", "constancia"],
+      "structure": "acróstico alfabético",
+      "cultural_use": "Meditación sobre la Torá, estructura poética única",
+      "tag": "#cultura"
+    },
+    {
+      "id": "salmo_150",
+      "name_es": "Salmo 150",
+      "themes": ["alabanza", "música", "cierre"],
+      "structure": "doxología final",
+      "cultural_use": "Cierre del salterio, invitación a la alabanza",
+      "tag": "#cultura"
+    }
+  ]
+}

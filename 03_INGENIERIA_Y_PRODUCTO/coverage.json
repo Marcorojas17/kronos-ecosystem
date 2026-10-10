@@ -1,0 +1,34 @@
+{
+  "proyecto": "KRONOS ECOSYSTEM",
+  "creador": "Marco Antonio Rojas Valdovinos",
+  "fundador_id": "#000",
+  "firma": "DMD-33 ●_○ S.A. DE C.V.",
+  "copyright": "© 2026 Marco Antonio Rojas Valdovinos",
+  "cobertura": {
+    "actual": 14,
+    "objetivo": 80,
+    "umbral_minimo": 60,
+    "estado": "ROJO"
+  },
+  "categorias": {
+    "apps": { "cobertura": 8, "objetivo": 80 },
+    "packages": { "cobertura": 22, "objetivo": 80 },
+    "services": { "cobertura": 12, "objetivo": 80 },
+    "contracts": { "cobertura": 0, "objetivo": 95 },
+    "infrastructure": { "cobertura": 0, "objetivo": 60 }
+  },
+  "bloqueadores": [
+    "Fuga de memoria en worker cron",
+    "Deploy manual sin CI/CD",
+    "Secretos en texto plano",
+    "Sin pruebas automatizadas en agentes Python"
+  ],
+  "acciones": [
+    "Congelar módulos 2.3-2.7",
+    "Implementar tests unitarios",
+    "Configurar CI/CD real",
+    "Migrar secretos a vault"
+  ],
+  "sello": "○_●",
+  "lema": "El legado no se hereda. Se firma."
+}

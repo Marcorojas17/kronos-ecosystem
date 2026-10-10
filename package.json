@@ -1,0 +1,43 @@
+{
+<<<<<<< HEAD
+  "name": "kronos28",
+  "version": "0.1.0",
+  "scripts": {
+    "kronos:gen": "node agents/agent-folio.js",
+    "kronos:contrato": "node agents/agent-contrato.js",
+    "kronos:verify": "node guardians/guardian-verify.js",
+    "kronos:guard-rfc": "node guardians/guardian-rfc.js",
+    "kronos:gen-and-verify": "node agents/agent-folio.js > /tmp/folio.json && cat /tmp/folio.json && node guardians/guardian-verify.js $(node -e \"console.log(JSON.parse(require('fs').readFileSync('/tmp/folio.json','utf8')).folio)\")"
+  }
+}
+=======
+  "name": "kronos-ecosystem",
+  "version": "20.1.0",
+  "private": true,
+  "description": "KRONOS Ecosystem - Monorepo. Verificación criptográfica local-first.",
+  "author": "Marco Antonio Rojas Valdovinos (#000)",
+  "license": "MIT",
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "turbo": "^2.0.0",
+    "typescript": "^5.4.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
+>>>>>>> 9020ed136b504c4a9046fc29e65fe20a9758ca79

@@ -1,0 +1,30 @@
+# --- CREDENCIALES Y SECRETOS ---
+MP_ACCESS_TOKEN
+Environment
+.env
+.env.*
+*.pem
+*.key
+
+# --- ARCHIVOS DEL SISTEMA (iSH / iOS) ---
+.ash_history
+.bash_history
+.bashrc
+.profile
+.cache/
+.npm/
+.git-credentials
+.gitconfig
+
+# --- BASURA DE DESARROLLO ---
+node_modules/
+__pycache__/
+*.log
+*.zip
+*.bak
+*.pyc
+.DS_Store
+.ash_history
+.bash_history
+MP_ACCESS_TOKEN
+Environment

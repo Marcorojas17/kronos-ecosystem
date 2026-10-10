@@ -1,0 +1,16 @@
+{
+  "blocked": true,
+  "phase": "FASE_0_CONTENCION_48H",
+  "reason": "Falla #4 Seguridad - Llave Genesis #000 quemada viva en fork + Falla #2 Legal Token KRN = security. Onboarding pausado hasta completar rotacion y constitucion SA de CV",
+  "founder": "#000 Marco Antonio Rojas Valdovinos",
+  "budget_usd": 11500,
+  "deficit_usd": -38500,
+  "unblock_conditions": [
+    "LLAVE_QUEMADA_EVIDENCIA.md publicado",
+    "Key rotation completada",
+    "RISK_DISCLOSURE.md firmado",
+    "S.A. de C.V. constituida"
+  ],
+  "estimated_unblock": "2026-11-04",
+  "contact": "marco.a.rojas.v@hotmail.com"
+}

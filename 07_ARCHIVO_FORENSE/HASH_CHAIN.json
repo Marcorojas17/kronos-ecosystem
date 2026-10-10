@@ -1,0 +1,36 @@
+{
+  "proyecto": "KRONOS ECOSYSTEM",
+  "creador": "Marco Antonio Rojas Valdovinos",
+  "fundador_id": "#000",
+  "firma": "DMD-33 ●_○ S.A. DE C.V.",
+  "copyright": "© 2026 Marco Antonio Rojas Valdovinos",
+  "tipo": "Cadena de hashes dual",
+  "algoritmos": {
+    "principal": "SHA-256",
+    "secundario": "SHA3-512",
+    "post_cuantico_futuro": "lattice hash desde 2040"
+  },
+  "cadena": {
+    "genesis": {
+      "id": "GENESIS",
+      "hash_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "hash_sha3": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "fecha": "2026-10-02T00:00:00Z"
+    },
+    "eventos": {
+      "total": 127,
+      "estado": "EN_PROCESO",
+      "nota": "Cada evento tiene hash encadenado al anterior"
+    }
+  },
+  "merkle_roots": {
+    "articulos": "e69b2c242ab44d90b67ff1b8eda679e34911fb347e867e43d23344a703390d93",
+    "docs": "67180206595ec66d4d422b223f8d966961ecdf00cc2c32ed81133e83162ae813"
+  },
+  "verificacion": {
+    "herramientas": ["sha256sum", "openssl", "sha3sum"],
+    "comando_ejemplo": "cat archivo.md | sha256sum"
+  },
+  "sello": "○_●",
+  "lema": "El legado no se hereda. Se firma."
+}

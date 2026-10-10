@@ -1,0 +1,15 @@
+# ═══════════════════════════════════════════════════════════════════════════
+# CRONOS · robots.txt · v1.0
+# Instrucciones para rastreadores de buscadores
+# ═══════════════════════════════════════════════════════════════════════════
+
+User-agent: *
+Allow: /
+
+# Archivos internos del repositorio que no aportan al índice
+Disallow: /.github/
+Disallow: /data/schemas/
+Disallow: /tests/
+
+# Sitemap
+Sitemap: https://marcorojas17.github.io/PROYECTO-KRONOS/sitemap.xml

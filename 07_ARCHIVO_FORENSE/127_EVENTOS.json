@@ -1,0 +1,26 @@
+{
+  "proyecto": "KRONOS ECOSYSTEM",
+  "creador": "Marco Antonio Rojas Valdovinos",
+  "fundador_id": "#000",
+  "firma": "DMD-33 ●_○ S.A. DE C.V.",
+  "copyright": "© 2026 Marco Antonio Rojas Valdovinos",
+  "total_eventos": 127,
+  "estado": "VERIFICADO",
+  "categorias": {
+    "seguridad": 15,
+    "desarrollo": 45,
+    "auditoria": 22,
+    "operaciones": 30,
+    "documentacion": 15
+  },
+  "resumen": [
+    { "rango": "001-015", "categoria": "Seguridad", "descripcion": "Incidentes de seguridad y rotaciones de llave" },
+    { "rango": "016-060", "categoria": "Desarrollo", "descripcion": "Commits, merges y releases" },
+    { "rango": "061-082", "categoria": "Auditoría", "descripcion": "Revisiones forenses y validaciones" },
+    { "rango": "083-112", "categoria": "Operaciones", "descripcion": "Despliegues, monitoreo y CI/CD" },
+    { "rango": "113-127", "categoria": "Documentación", "descripcion": "Tesis, manuales y comunicados" }
+  ],
+  "nota": "Este archivo es un índice. Cada evento tiene su log individual en LOGS_INMUTABLES/",
+  "sello": "○_●",
+  "lema": "El legado no se hereda. Se firma."
+}

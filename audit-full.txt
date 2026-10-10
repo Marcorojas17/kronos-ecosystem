@@ -1,0 +1,476 @@
+### TREE ###
+.
+./.git
+./.github
+./.github/workflows
+./.github/workflows/guardian.yml
+./.github/workflows/verificar.yml
+./.github/workflows/verify.yml
+./404.html
+./CHANGELOG.md
+./CODE_OF_CONDUCT.md
+./CONTRIBUTING.md
+./COPYRIGHT.md
+./GOVERNANCE.md
+./LICENSE
+./LICENSE-CC-BY-NC-ND
+./MANIFEST.sha256
+./PROTOCOL.md
+./Pnp
+./README.md
+./SECURITY.md
+./_config.yml
+./_data
+./_data/navigation.yml
+./aditoria
+./admin.html
+./agentes
+./agentes/README.md
+./agentes/agente-base.js
+./agentes/cuicatl-publicista
+./agentes/cuicatl-publicista/index.html
+./agentes/cuicatl-publicista/politica.md
+./agentes/cuicatl-publicista/prompt.md
+./agentes/temachtiani-reclutador
+./agentes/temachtiani-reclutador/index.html
+./agentes/temachtiani-reclutador/politica.md
+./agentes/tlachixqui-auditor
+./agentes/tlachixqui-auditor/index.html
+./agentes/tlachixqui-auditor/politica.md
+./agentes/tlamatini-cronista
+./agentes/tlamatini-cronista/politica.md
+./agentes/tlamatini-cronista/prompt.md
+./agentes/tlapohualli-analista
+./agentes/tlapohualli-analista/index.html
+./agentes/tlapohualli-analista/politica.md
+./agentes/tonal-notario
+./agentes/tonal-notario/politica.md
+./archive
+./archive/README.md
+./assets
+./assets/css
+./assets/css/animations.css
+./assets/css/components.css
+./assets/css/main.css
+./assets/data
+./assets/data/folios.json
+./assets/js
+./assets/js/admin.js
+./assets/js/app.js
+./assets/js/certificate-renderer.js
+./assets/js/crypto-handler.js
+./assets/js/particles.js
+./assets/js/registrar.js
+./assets/js/verifier.js
+./carta-presentación.txt
+./certificacion
+./certificacion/anclaje-manifest
+./certificacion/anclaje-manifest/anclaje.js
+./certificacion/anclaje-manifest/index.html
+./certificacion/anclaje-manifest/manual.html
+./certificacion/certificado-maestro.html
+./certificacion/emisor-certificados
+./certificacion/emisor-certificados/certificado-visual.html
+./certificacion/emisor-certificados/certificados.js
+./certificacion/emisor-certificados/index.html
+./certificacion/emisor-certificados/manual.html
+./certificacion/manifest-integridad
+./certificacion/manifest-integridad/index.html
+./certificacion/manifest-integridad/manifest.js
+./certificacion/manifest-integridad/styles.css
+./certificacion/notario-kronos
+./certificacion/notario-kronos/README.md
+./certificacion/notario-kronos/certificado-notarial.html
+./certificacion/notario-kronos/index.html
+./certificacion/notario-kronos/manual.html
+./certificacion/notario-kronos/notario.js
+./certificacion/notario-kronos/politica.md
+./certificacion/notario-kronos/prompt.md
+./certificacion/sello-tiempo
+./certificacion/sello-tiempo/index.html
+./certificacion/sello-tiempo/manual.html
+./certificacion/sello-tiempo/sello-tiempo.js
+./certificacion/verificador-publico
+./certificacion/verificador-publico/index.html
+./certificacion/verificador-publico/manual.html
+./certificacion/verificador-publico/verificador.js
+./certificates
+./certificates/README.md
+./cierre
+./cierre/export-cifrado
+./cierre/export-cifrado/AUTORIA
+./cierre/export-cifrado/README.md
+./cierre/export-cifrado/estructura del paquete legado
+./cierre/export-cifrado/export.js
+./cierre/export-cifrado/index.html
+./cierre/export-cifrado/manual.html
+./cierre/export-cifrado/styles.css
+./cierre/fin-digno
+./cierre/fin-digno/AUTORIA
+./cierre/fin-digno/README.md
+./cierre/fin-digno/fin.js
+./cierre/fin-digno/index.html
+./cierre/fin-digno/manual.html
+./cierre/fin-digno/styles.css
+./cimiento
+./cimiento/AUTORIA
+./cimiento/anclaje-ethereum
+./cimiento/anclaje-ethereum/AUTORIA
+./cimiento/anclaje-ethereum/README.md
+./cimiento/anclaje-ethereum/anchor-v1.js
+./cimiento/anclaje-ethereum/anchor.js
+./cimiento/anclaje-ethereum/certificado.html
+./cimiento/anclaje-ethereum/index.html
+./cimiento/anclaje-ethereum/manual.html
+./cimiento/anclaje-ethereum/paquete de anclaje
+./cimiento/anclaje-ethereum/styles.css
+./cimiento/cripto-core
+./cimiento/cripto-core/AUTORIA
+./cimiento/cripto-core/README.md
+./cimiento/cripto-core/core.js
+./cimiento/cripto-core/index.html
+./cimiento/cripto-core/manual.html
+./cimiento/cripto-core/styles.css
+./cimiento/storage-dexie
+./cimiento/storage-dexie/AUTORIA
+./cimiento/storage-dexie/README.md
+./cimiento/storage-dexie/certificado.html
+./cimiento/storage-dexie/cimiento
+./cimiento/storage-dexie/index.html
+./cimiento/storage-dexie/manual.html
+./cimiento/storage-dexie/storage-v2.js
+./cimiento/storage-dexie/storage.js
+./cimiento/storage-dexie/styles.css
+./curriculum-terminal.txt
+./docs
+./docs/ARQUITECTURA-VIVA.md
+./docs/EXPLICACION-UNIVERSAL.md
+./docs/MAPA.md
+./docs/PLANTILLA-TERMINAL.md
+./docs/README.md
+./docs/demos-oficiales.html
+./docs/index.html
+./docs/kronos-para-ninos.html
+./evidence
+./evidence/manifest.json
+./favicon.svg
+./gobernanza
+./gobernanza/ejecucion-decisiones
+./gobernanza/ejecucion-decisiones/README.md
+./gobernanza/ejecucion-decisiones/ejecucion.js
+./gobernanza/ejecucion-decisiones/index.html
+./gobernanza/ejecucion-decisiones/manual.html
+./gobernanza/propuestas-votacion
+./gobernanza/propuestas-votacion/README.md
+./gobernanza/propuestas-votacion/index.html
+./gobernanza/propuestas-votacion/manual.html
+./gobernanza/propuestas-votacion/propuestas.js
+./gobernanza/propuestas-votacion/styles.css
+./gobernanza/propuestas-votacion/votacion.js
+./gobernanza/quorum-mayorias
+./gobernanza/quorum-mayorias/README.md
+./gobernanza/quorum-mayorias/index.html
+./gobernanza/quorum-mayorias/manual.html
+./gobernanza/quorum-mayorias/quorum.js
+./gobernanza/revocacion-auditoria
+./gobernanza/revocacion-auditoria/README.md
+./gobernanza/revocacion-auditoria/index.html
+./gobernanza/revocacion-auditoria/manual.html
+./gobernanza/revocacion-auditoria/revocacion.js
+./guardian.py
+./guardians
+./guardians/GUARDIAN-ACTA.md
+./guardians/GUARDIAN-MRR.md
+./guardians/GUARDIAN-SHA.md
+./guardians/GUARDIAN-TSA.md
+./guardians/GUARDIAN-VAULT.md
+./i
+./identidad
+./identidad/registro-humano
+./identidad/registro-humano/AUTORIA
+./identidad/registro-humano/README.md
+./identidad/registro-humano/estructura del certificado 
+./identidad/registro-humano/identidad.js
+./identidad/registro-humano/index.html
+./identidad/registro-humano/manual.html
+./identidad/registro-humano/pasaporte-visual.html
+./identidad/registro-humano/styles.css
+./identidad/registro-ia
+./identidad/registro-ia/AUTORIA
+./identidad/registro-ia/README.md
+./identidad/registro-ia/guardrails.js
+./identidad/registro-ia/ia.js
+./identidad/registro-ia/index.html
+./identidad/registro-ia/log-acciones.js
+./identidad/registro-ia/manual.html
+./identidad/registro-ia/pasaporte-ia.html
+./identidad/registro-ia/politica.js
+./identidad/registro-ia/styles.css
+./identidad/roles-permisos
+./identidad/roles-permisos/AUTORIA
+./identidad/roles-permisos/README.md
+./identidad/roles-permisos/certificado-rol.html
+./identidad/roles-permisos/index.html
+./identidad/roles-permisos/manual.html
+./identidad/roles-permisos/permisos.js
+./identidad/roles-permisos/roles.js
+./identidad/roles-permisos/styles.css
+./index.html
+./kodice-secreto
+./kodice-secreto/index.html
+./laboratorio
+./laboratorio/README.md
+./legado
+./legado/autoria
+./legado/autoria/FIRMA DE AUTORIA
+./legado/autoria/README.md
+./legado/autoria/autoria.js
+./legado/autoria/index.html
+./legado/autoria/manual.html
+./legado/autoria/styles.css
+./legado/filosofia
+./legado/filosofia/FIRMA DE AUTORIA
+./legado/filosofia/README.md
+./legado/filosofia/filosofia.js
+./legado/filosofia/index.html
+./legado/filosofia/manual.html
+./legado/filosofia/styles.css
+./legado/genesis
+./legado/genesis/README.md
+./legado/genesis/genesis.js
+./legado/genesis/index.html
+./legado/genesis/manual.html
+./legado/genesis/styles.css
+./legado/manifiesto
+./legado/manifiesto/Firma de autoria
+./legado/manifiesto/README.md
+./legado/manifiesto/index.html
+./legado/manifiesto/manifiesto.js
+./legado/manifiesto/manual.html
+./legado/manifiesto/styles.css
+./logs
+./logs/log.json
+./luxury.html
+./manifest.json
+./modulos
+./modulos/boveda-voz
+./modulos/boveda-voz/AUTORIA
+./modulos/boveda-voz/README.md
+./modulos/boveda-voz/boveda.js
+./modulos/boveda-voz/index.html
+./modulos/boveda-voz/manual.html
+./modulos/boveda-voz/styles.css
+./modulos/evidence-os
+./modulos/evidence-os/AUTORIA
+./modulos/evidence-os/README.md
+./modulos/evidence-os/evidence.js
+./modulos/evidence-os/index.html
+./modulos/evidence-os/manual.html
+./modulos/evidence-os/styles.css
+./movimiento
+./movimiento/assets
+./movimiento/assets/art
+./movimiento/assets/hero-kronos.png
+./movimiento/assets/hero-monumento.png
+./movimiento/assets/hero-prisma.png
+./movimiento/assets/img
+./movimiento/assets/k-avatar.png
+./movimiento/carta-bienvenida.html
+./movimiento/faq.md
+./movimiento/fundador.html
+./movimiento/genesis.md
+./movimiento/gracias.html
+./movimiento/index.html
+./movimiento/iniciacion.html
+./movimiento/manifiesto.md
+./movimiento/registro-fundacional
+./movimiento/registro-fundacional/README.md
+./movimiento/registro-fundacional/certificado-fundacional.html
+./movimiento/registro-fundacional/index.html
+./movimiento/registro-fundacional/manual.html
+./movimiento/registro-fundacional/registro.js
+./movimiento/registro-fundacional/styles.css
+./movimiento/roadmap.md
+./movimiento/solicitar_plaza.html
+./operacion
+./operacion/dashboard-salud
+./operacion/dashboard-salud/AUTORIA
+./operacion/dashboard-salud/README.md
+./operacion/dashboard-salud/dashboard.js
+./operacion/dashboard-salud/index.html
+./operacion/dashboard-salud/manual.html
+./operacion/dashboard-salud/styles.css
+./operacion/rituales
+./operacion/rituales/AUTORIA
+./operacion/rituales/README.md
+./operacion/rituales/index.html
+./operacion/rituales/manual.html
+./operacion/rituales/rituales.js
+./operacion/rituales/styles.css
+./orquestacion
+./orquestacion/event-bus
+./orquestacion/event-bus/AUTORIA
+./orquestacion/event-bus/README.md
+./orquestacion/event-bus/bus.js
+./orquestacion/event-bus/index.html
+./orquestacion/event-bus/manual.html
+./orquestacion/event-bus/styles.css
+./orquestacion/router-modulos
+./orquestacion/router-modulos/AUTORIA
+./orquestacion/router-modulos/README.md
+./orquestacion/router-modulos/index.html
+./orquestacion/router-modulos/manual.html
+./orquestacion/router-modulos/router.js
+./orquestacion/router-modulos/styles.css
+./projects
+./projects/acta
+./projects/acta/README.md
+./projects/acta/index.html
+./projects/bobeda
+./projects/bobeda/bobeda.html
+./projects/bobeda/index.html
+./projects/boveda
+./projects/boveda/index.html
+./projects/boveda/privacidad.html
+./projects/boveda/terminos.html
+./projects/cymatic
+./projects/cymatic/README.md
+./projects/cymatic/index.html
+./projects/cymatic/live-pro.html
+./projects/cymatic/studio.html
+./projects/dmd-33
+./projects/dmd-33/README.md
+./projects/dmd-33/espejo.html
+./projects/dmd-33/flow.html
+./projects/dmd-33/genesis.html
+./projects/dmd-33/index.html
+./projects/dmd-33/kronos.html
+./projects/dmd-33/manifest.json
+./projects/dmd-33/orb.html
+./projects/dmd-33/sw.js
+./projects/evidence-os
+./projects/evidence-os/README.md
+./projects/evidence-os/dashboard.html
+./projects/evidence-os/index.html
+./projects/evidence-os/index1.html
+./projects/genesis-miner
+./projects/genesis-miner/PROGRESO.txt
+./projects/genesis-miner/README.md
+./projects/genesis-miner/genesis_miner.py.
+./projects/genesis-miner/index.html
+./projects/genesis-miner/merkle_export.py
+./projects/genesis-miner/verificar_merkle.py
+./projects/k4-framework
+./projects/k4-framework/README.md
+./projects/kronos-vault
+./projects/kronos-vault/README.md
+./projects/kronos-vault/index.html
+./projects/md33
+./projects/md33/README.md
+./projects/md33/index.html
+./projects/md33/src
+./projects/yejida
+./projects/yejida/README.md
+./projects/yejida/index.html
+./protocol
+./protocol/KTP-001.md
+./registrar.html
+./robots.txt
+./servicios.html
+./sitemap.xml
+./tesis.md
+./tesiscompleta.md
+./verificar-certificado.html
+./verifier.py
+./verify.html
+
+### PROJECTS ###
+total 0
+drwxr-xr-x 13 root root  416 Sep 28 01:07 .
+drwxr-xr-x 27 root root 1920 Sep 28 01:07 ..
+drwxr-xr-x  2 root root  128 Sep 28 01:07 acta
+drwxr-xr-x  2 root root  128 Sep 28 01:07 bobeda
+drwxr-xr-x  2 root root  160 Sep 28 01:07 boveda
+drwxr-xr-x  2 root root  192 Sep 28 01:07 cymatic
+drwxr-xr-x  2 root root  352 Sep 28 01:07 dmd-33
+drwxr-xr-x  2 root root  192 Sep 28 01:07 evidence-os
+drwxr-xr-x  2 root root  256 Sep 28 01:07 genesis-miner
+drwxr-xr-x  2 root root   96 Sep 28 01:07 k4-framework
+drwxr-xr-x  2 root root  128 Sep 28 01:07 kronos-vault
+drwxr-xr-x  3 root root  160 Sep 28 01:07 md33
+drwxr-xr-x  2 root root  128 Sep 28 01:07 yejida
+
+### GUARDIANS ###
+total 52
+drwxr-xr-x  2 root root   224 Sep 28 01:07 .
+drwxr-xr-x 27 root root  1920 Sep 28 01:07 ..
+-rw-r--r--  1 root root 12576 Sep 28 01:07 GUARDIAN-ACTA.md
+-rw-r--r--  1 root root  6978 Sep 28 01:07 GUARDIAN-MRR.md
+-rw-r--r--  1 root root 11945 Sep 28 01:07 GUARDIAN-SHA.md
+-rw-r--r--  1 root root  7698 Sep 28 01:07 GUARDIAN-TSA.md
+-rw-r--r--  1 root root  6535 Sep 28 01:07 GUARDIAN-VAULT.md
+
+### SIZES PROJECTS ###
+16K	projects/k4-framework/
+20K	projects/boveda/
+28K	projects/bobeda/
+28K	projects/kronos-vault/
+32K	projects/acta/
+32K	projects/yejida/
+40K	projects/md33/
+84K	projects/genesis-miner/
+88K	projects/cymatic/
+100K	projects/evidence-os/
+112K	projects/dmd-33/
+
+### SIZES GUARDIANS ###
+8.0K	guardians/GUARDIAN-MRR.md/
+8.0K	guardians/GUARDIAN-TSA.md/
+8.0K	guardians/GUARDIAN-VAULT.md/
+12K	guardians/GUARDIAN-SHA.md/
+16K	guardians/GUARDIAN-ACTA.md/
+
+### FILES PER SUBPROJECT ###
+1 archivos · projects/k4-framework/
+2 archivos · projects/acta/
+2 archivos · projects/bobeda/
+2 archivos · projects/kronos-vault/
+2 archivos · projects/yejida/
+3 archivos · projects/boveda/
+3 archivos · projects/md33/
+4 archivos · projects/cymatic/
+4 archivos · projects/evidence-os/
+6 archivos · projects/genesis-miner/
+9 archivos · projects/dmd-33/
+
+### TESTS ###
+
+### ANCHOR FILES ###
+./cimiento/anclaje-ethereum/anchor-v1.js
+./cimiento/anclaje-ethereum/anchor.js
+
+### HASH EN REPO ###
+
+### PLAZAS ###
+movimiento/registro-fundacional/certificado-fundacional.html
+movimiento/registro-fundacional/index.html
+movimiento/registro-fundacional/styles.css
+movimiento/registro-fundacional/registro.js
+movimiento/registro-fundacional/README.md
+movimiento/registro-fundacional/manual.html
+movimiento/index.html
+movimiento/carta-bienvenida.html
+movimiento/genesis.md
+movimiento/faq.md
+movimiento/iniciacion.html
+movimiento/roadmap.md
+movimiento/manifiesto.md
+movimiento/fundador.html
+movimiento/assets/hero-kronos.png
+movimiento/assets/hero-monumento.png
+movimiento/assets/art/README.md
+movimiento/assets/hero-prisma.png
+movimiento/assets/img/og-image.jpg
+movimiento/assets/k-avatar.png
+movimiento/gracias.html
+movimiento/solicitar_plaza.html

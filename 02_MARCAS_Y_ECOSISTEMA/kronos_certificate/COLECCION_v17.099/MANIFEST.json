@@ -1,0 +1,63 @@
+{
+  "coleccion": "KRONOS CERTIFICATE v17.099",
+  "creador": "Marco Antonio Rojas Valdovinos",
+  "fundador_id": "#000",
+  "firma": "DMD-33 ●_○ S.A. DE C.V.",
+  "copyright": "© 2026 Marco Antonio Rojas Valdovinos",
+  "fecha_creacion": "2026-10-02",
+  "ubicacion": "Toluca / Lerma, Estado de México",
+  "total_obras": 24,
+  "estado_coleccion": "EN_PROCESO",
+  "registro_safe_creative": {
+    "2607086319439": "Acta Fundacional",
+    "2607146379465": "Arquitectura de Legado Digital",
+    "2608056639878": "FDV Sistema Infalsificable",
+    "2608096674952": "Autenticación Universal FVD",
+    "2608096678240": "Código Fuente y API",
+    "2608156740085": "Documento Maestro KÓDICE V1.3",
+    "2608166741669": "Ecosistema KÓDICE-KRONOS-FDV",
+    "2608176749334": "Sistema KRONOS 360"
+  },
+  "anclajes_ethereum": [
+    "0x8ca8e84e1258abac9acb29d14d25114e4775d782ecfda51ae29933247ed2970e",
+    "0xd2c2a7e128e6c81b689b3b0d9e1b31a4f6bf8df0391b7b6c05e7daa7fb895774c"
+  ],
+  "pipeline_obra": [
+    "1. Crear obra",
+    "2. Calcular hash SHA-256",
+    "3. Subir a IPFS (Pinata free tier)",
+    "4. Registrar en Safe Creative",
+    "5. Firmar con Ed25519",
+    "6. Emitir certificado de autenticidad",
+    "7. Anclar hash en Ethereum"
+  ],
+  "obras": [
+    { "id": "OBRA_01", "archivo": "OBRA_01.md", "titulo": "Pendiente", "hash_sha256": "Pendiente", "ipfs_cid": "Pendiente", "safe_creative": "Pendiente", "firma_ed25519": "Pendiente", "estado": "EN_PROCESO" },
+    { "id": "OBRA_02", "archivo": "OBRA_02.md", "titulo": "Pendiente", "hash_sha256": "Pendiente", "ipfs_cid": "Pendiente", "safe_creative": "Pendiente", "firma_ed25519": "Pendiente", "estado": "EN_PROCESO" },
+    { "id": "OBRA_03", "archivo": "OBRA_03.md", "titulo": "Pendiente", "hash_sha256": "Pendiente", "ipfs_cid": "Pendiente", "safe_creative": "Pendiente", "firma_ed25519": "Pendiente", "estado": "EN_PROCESO" },
+    { "id": "OBRA_04", "archivo": "OBRA_04.md", "titulo": "Pendiente", "hash_sha256": "Pendiente", "ipfs_cid": "Pendiente", "safe_creative": "Pendiente", "firma_ed25519": "Pendiente", "estado": "EN_PROCESO" },
+    { "id": "OBRA_05", "archivo": "OBRA_05.md", "titulo": "Pendiente", "hash_sha256": "Pendiente", "ipfs_cid": "Pendiente", "safe_creative": "Pendiente", "firma_ed25519": "Pendiente", "estado": "EN_PROCESO" },
+    { "id": "OBRA_06", "archivo": "OBRA_06.md", "titulo": "Pendiente", "hash_sha256": "Pendiente", "ipfs_cid": "Pendiente", "safe_creative": "Pendiente", "firma_ed25519": "Pendiente", "estado": "EN_PROCESO" },
+    { "id": "OBRA_07", "archivo": "OBRA_07.md", "titulo": "Pendiente", "hash_sha256": "Pendiente", "ipfs_cid": "Pendiente", "safe_creative": "Pendiente", "firma_ed25519": "Pendiente", "estado": "EN_PROCESO" },
+    { "id": "OBRA_08", "archivo": "OBRA_08.md", "titulo": "Pendiente", "hash_sha256": "Pendiente", "ipfs_cid": "Pendiente", "safe_creative": "Pendiente", "firma_ed25519": "Pendiente", "estado": "EN_PROCESO" },
+    { "id": "OBRA_09", "archivo": "OBRA_09.md", "titulo": "Pendiente", "hash_sha256": "Pendiente", "ipfs_cid": "Pendiente", "safe_creative": "Pendiente", "firma_ed25519": "Pendiente", "estado": "EN_PROCESO" },
+    { "id": "OBRA_10", "archivo": "OBRA_10.md", "titulo": "Pendiente", "hash_sha256": "Pendiente", "ipfs_cid": "Pendiente", "safe_creative": "Pendiente", "firma_ed25519": "Pendiente", "estado": "EN_PROCESO" },
+    { "id": "OBRA_11", "archivo": "OBRA_11.md", "titulo": "Pendiente", "hash_sha256": "Pendiente", "ipfs_cid": "Pendiente", "safe_creative": "Pendiente", "firma_ed25519": "Pendiente", "estado": "EN_PROCESO" },
+    { "id": "OBRA_12", "archivo": "OBRA_12.md", "titulo": "Pendiente", "hash_sha256": "Pendiente", "ipfs_cid": "Pendiente", "safe_creative": "Pendiente", "firma_ed25519": "Pendiente", "estado": "EN_PROCESO" },
+    { "id": "OBRA_13", "archivo": "OBRA_13.md", "titulo": "Pendiente", "hash_sha256": "Pendiente", "ipfs_cid": "Pendiente", "safe_creative": "Pendiente", "firma_ed25519": "Pendiente", "estado": "EN_PROCESO" },
+    { "id": "OBRA_14", "archivo": "OBRA_14.md", "titulo": "Pendiente", "hash_sha256": "Pendiente", "ipfs_cid": "Pendiente", "safe_creative": "Pendiente", "firma_ed25519": "Pendiente", "estado": "EN_PROCESO" },
+    { "id": "OBRA_15", "archivo": "OBRA_15.md", "titulo": "Pendiente", "hash_sha256": "Pendiente", "ipfs_cid": "Pendiente", "safe_creative": "Pendiente", "firma_ed25519": "Pendiente", "estado": "EN_PROCESO" },
+    { "id": "OBRA_16", "archivo": "OBRA_16.md", "titulo": "Pendiente", "hash_sha256": "Pendiente", "ipfs_cid": "Pendiente", "safe_creative": "Pendiente", "firma_ed25519": "Pendiente", "estado": "EN_PROCESO" },
+    { "id": "OBRA_17", "archivo": "OBRA_17.md", "titulo": "Pendiente", "hash_sha256": "Pendiente", "ipfs_cid": "Pendiente", "safe_creative": "Pendiente", "firma_ed25519": "Pendiente", "estado": "EN_PROCESO" },
+    { "id": "OBRA_18", "archivo": "OBRA_18.md", "titulo": "Pendiente", "hash_sha256": "Pendiente", "ipfs_cid": "Pendiente", "safe_creative": "Pendiente", "firma_ed25519": "Pendiente", "estado": "EN_PROCESO" },
+    { "id": "OBRA_19", "archivo": "OBRA_19.md", "titulo": "Pendiente", "hash_sha256": "Pendiente", "ipfs_cid": "Pendiente", "safe_creative": "Pendiente", "firma_ed25519": "Pendiente", "estado": "EN_PROCESO" },
+    { "id": "OBRA_20", "archivo": "OBRA_20.md", "titulo": "Pendiente", "hash_sha256": "Pendiente", "ipfs_cid": "Pendiente", "safe_creative": "Pendiente", "firma_ed25519": "Pendiente", "estado": "EN_PROCESO" },
+    { "id": "OBRA_21", "archivo": "OBRA_21.md", "titulo": "Pendiente", "hash_sha256": "Pendiente", "ipfs_cid": "Pendiente", "safe_creative": "Pendiente", "firma_ed25519": "Pendiente", "estado": "EN_PROCESO" },
+    { "id": "OBRA_22", "archivo": "OBRA_22.md", "titulo": "Pendiente", "hash_sha256": "Pendiente", "ipfs_cid": "Pendiente", "safe_creative": "Pendiente", "firma_ed25519": "Pendiente", "estado": "EN_PROCESO" },
+    { "id": "OBRA_23", "archivo": "OBRA_23.md", "titulo": "Pendiente", "hash_sha256": "Pendiente", "ipfs_cid": "Pendiente", "safe_creative": "Pendiente", "firma_ed25519": "Pendiente", "estado": "EN_PROCESO" },
+    { "id": "OBRA_24", "archivo": "OBRA_24.md", "titulo": "Pendiente", "hash_sha256": "Pendiente", "ipfs_cid": "Pendiente", "safe_creative": "Pendiente", "firma_ed25519": "Pendiente", "estado": "EN_PROCESO" }
+  ],
+  "nota": "Los campos 'Pendiente' se actualizarán cuando cada obra sea registrada, subida a IPFS y firmada criptográficamente.",
+  "sello": "○_●",
+  "lema": "El legado no se hereda. Se firma."
+}

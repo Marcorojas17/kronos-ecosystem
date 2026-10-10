@@ -1,0 +1,49 @@
+{
+  "proyecto": "KRONOS ECOSYSTEM",
+  "version": "v20.1",
+  "creador": "Marco Antonio Rojas Valdovinos",
+  "fundador_id": "#000",
+  "firma": "DMD-33 ●_○ S.A. DE C.V.",
+  "copyright": "© 2026 Marco Antonio Rojas Valdovinos",
+  "fecha_actualizacion": "2026-10-02",
+  "estado": "CRITICO",
+  "presupuesto": {
+    "actual_usd": 11500,
+    "requerido_minimo_usd": 25000,
+    "requerido_real_usd": 50000,
+    "deficit_usd": -38500,
+    "runway_dias": 0,
+    "runway_meses": 0
+  },
+  "desglose_actual": {
+    "banco_usd": 11500,
+    "cripto_usd": 0,
+    "inversiones_usd": 0,
+    "otros_usd": 0
+  },
+  "costos_estimados_anio_1": {
+    "abogado_web3_usd": 10000,
+    "auditoria_contratos_usd": 5000,
+    "desarrollo_tecnico_usd": 5000,
+    "operacion_mensual_usd": 500,
+    "constitucion_sa_cv_mxn": 15000
+  },
+  "fuentes_potenciales": {
+    "inversionista_angel": "Objetivo principal",
+    "socio_tecnico_equity": "Alternativa",
+    "abogado_pro_bono": "Complementaria",
+    "convocatorias_publicas": "Pendiente"
+  },
+  "acciones_inmediatas": [
+    "Pausar ventas de Fundadores",
+    "Publicar Risk Disclosure",
+    "Congelar emisión de NFTs",
+    "Buscar inversionista ángel ($25k+)",
+    "Constituir S.A. de C.V."
+  ],
+  "semaforo": "ROJO",
+  "contacto": "contacto@kronos3hash.online",
+  "creador": "Marco Antonio Rojas Valdovinos",
+  "sello": "○_●",
+  "lema": "El legado no se hereda. Se firma."
+}

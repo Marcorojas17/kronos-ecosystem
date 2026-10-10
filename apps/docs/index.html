@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KRONOS v20.1 — HUB CENTRAL · Monorepo · Marco A. Rojas Valdovinos</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:monospace;background:#000;color:#fff;overflow-x:hidden;min-height:100vh}
+.bg{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;
+  background:radial-gradient(circle at 20% 30%,rgba(201,162,39,0.3) 0%,transparent 50%),
+  radial-gradient(circle at 80% 70%,rgba(0,245,255,0.2) 0%,transparent 50%),
+  radial-gradient(circle at 50% 50%,rgba(106,0,244,0.15) 0%,transparent 70%),#0a0a0b;
+  animation:move 20s infinite alternate}
+@keyframes move{0%{filter:hue-rotate(0deg) blur(0px)}100%{filter:hue-rotate(90deg) blur(2px)}}
+.particles{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;
+  background:repeating-linear-gradient(90deg,transparent,transparent 100px,
+  rgba(0,245,255,0.03) 100px,rgba(0,245,255,0.03) 101px);
+  animation:flow 10s linear infinite}
+@keyframes flow{0%{transform:translateX(0)}100%{transform:translateX(200px)}}
+.navbar{position:sticky;top:0;z-index:100;background:rgba(10,10,11,0.95);
+  backdrop-filter:blur(20px);border-bottom:1px solid rgba(201,162,39,0.3);
+  padding:12px 20px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.navbar a,.navbar button{background:rgba(201,162,39,0.1);color:#c9a227;
+  border:1px solid rgba(201,162,39,0.5);padding:8px 14px;border-radius:8px;
+  text-decoration:none;font-size:0.85em;cursor:pointer;transition:0.3s;font-family:monospace}
+.navbar a:hover,.navbar button:hover{background:#c9a227;color:#000;box-shadow:0 0 20px rgba(201,162,39,0.6)}
+.container{max-width:1100px;margin:30px auto;padding:20px}
+.hero{background:rgba(255,255,255,0.03);backdrop-filter:blur(20px);
+  border:1px solid rgba(201,162,39,0.4);border-radius:20px;padding:40px;
+  text-align:center;margin-bottom:30px;box-shadow:0 0 60px rgba(201,162,39,0.3)}
+h1{font-size:2.8em;background:linear-gradient(90deg,#c9a227,#00f5ff,#6a00f4);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;animation:glow 3s infinite alternate;margin-bottom:15px}
+@keyframes glow{0%{filter:drop-shadow(0 0 10px #c9a227)}100%{filter:drop-shadow(0 0 25px #00f5ff)}}
+.hero p{color:#aaa;margin:10px 0}
+.badge{display:inline-block;border:1px solid #c9a227;color:#c9a227;
+  padding:4px 12px;border-radius:15px;font-size:0.75em;margin:4px}
+.badge.green{border-color:#00ff88;color:#00ff88}
+.badge.red{border-color:#ff3333;color:#ff3333}
+.badge.yellow{border-color:#ffcc00;color:#ffcc00}
+.badge.cyan{border-color:#00f5ff;color:#00f5ff}
+
+.section-title{color:#c9a227;font-size:1.3em;margin:40px 0 20px;
+  padding-bottom:8px;border-bottom:1px solid rgba(201,162,39,0.3)}
+.sections{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.section{background:rgba(10,10,11,0.7);backdrop-filter:blur(15px);
+  border:1px solid rgba(201,162,39,0.3);border-radius:15px;padding:20px;
+  transition:0.3s;position:relative;overflow:hidden}
+.section:hover{border-color:#c9a227;box-shadow:0 0 30px rgba(201,162,39,0.4);transform:translateY(-5px)}
+.section::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;
+  background:radial-gradient(circle,rgba(201,162,39,0.05) 0%,transparent 70%);
+  animation:rotate 20s infinite linear;z-index:0}
+@keyframes rotate{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.section > *{position:relative;z-index:1}
+.section h3{color:#c9a227;margin-bottom:10px;font-size:1.1em}
+.section p{color:#888;font-size:0.85em;margin-bottom:12px;line-height:1.5}
+.section .status{font-size:0.75em;margin-bottom:10px}
+.section a{display:inline-block;background:rgba(201,162,39,0.15);color:#c9a227;
+  padding:8px 16px;border-radius:8px;text-decoration:none;font-size:0.85em;
+  border:1px solid rgba(201,162,39,0.5);transition:0.3s;margin-top:8px}
+.section a:hover{background:#c9a227;color:#000;box-shadow:0 0 20px rgba(201,162,39,0.6)}
+
+.footer{text-align:center;padding:40px 20px;margin-top:40px;
+  border-top:1px solid rgba(201,162,39,0.2);color:#666;font-size:0.85em}
+.footer .kintsugi{font-size:1.5em;color:#c9a227;margin:15px 0}
+@media(max-width:600px){h1{font-size:1.8em}.hero{padding:25px 15px}
+  .navbar a,.navbar button{padding:6px 10px;font-size:0.75em}}
+</style>
+</head>
+<body>
+
+<div class="bg"></div>
+<div class="particles"></div>
+
+<nav class="navbar">
+  <a href="index.html">🏠 INICIO</a>
+  <button onclick="history.back()">◀ ATRÁS</button>
+  <button onclick="history.forward()">▶ ADELANTE</button>
+  <a href="docs/ARBOL-NAVEGACION.md">🗺 ÁRBOL</a>
+  <a href="repertorio_vivo.json">📊 ESTADO</a>
+  <a href="docs/INSTRUCCIONES-Y-TESIS.md">📚 TESIS</a>
+  <a href="RISK_DISCLOSURE.md">⚠️ RIESGO</a>
+</nav>
+
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>◢◤ KRONOS v20.1 ◥◣</h1>
+    <p>Monorepo · Pionero $0 · Hub Central</p>
+    <p style="font-size:0.9em">
+      © 2026 <strong style="color:#c9a227">Marco Antonio Rojas Valdovinos</strong> · Fundador #000
+    </p>
+    <div style="margin-top:20px">
+      <span class="badge">$11,500 USD</span>
+      <span class="badge green">🟢 PIONERO</span>
+      <span class="badge cyan">📦 MONOREPO</span>
+      <span class="badge red">🔴 0% Ladrillos</span>
+    </div>
+    <p style="margin-top:20px;color:#888;font-size:0.85em">
+      Pre-Alpha · Sin S.A. · Sin reembolsos · Buscando $25k USD
+    </p>
+  </div>
+
+  <!-- APPS -->
+  <h2 class="section-title">📱 Apps · Aplicaciones desplegables</h2>
+  <div class="sections">
+
+    <div class="section">
+      <h3>💻 apps/web · PRODUCTO</h3>
+      <p class="status">
+        <span class="badge yellow">🟡 EN CONSTRUCCIÓN</span>
+        Next.js + Ethers
+      </p>
+      <p>Dashboard de verificación, generador de folios, API verify con hash y firma Ed25519.</p>
+      <a href="apps/web/index.html">▶ Ver app</a>
+    </div>
+
+    <div class="section">
+      <h3>📚 apps/docs · DOCUMENTACIÓN</h3>
+      <p class="status">
+        <span class="badge green">🟢 ESTÁTICO</span>
+        GitHub Pages
+      </p>
+      <p>Hub central, doc maestro portable, árbol de navegación, capítulos 00 al 09.</p>
+      <a href="apps/docs/index.html">▶ Ver docs</a>
+    </div>
+
+  </div>
+
+  <!-- PACKAGES -->
+  <h2 class="section-title">📦 Packages · Librerías compartidas</h2>
+  <div class="sections">
+
+    <div class="section">
+      <h3>⛓️ packages/contracts</h3>
+      <p class="status">
+        <span class="badge yellow">🟡 PENDIENTE DEPLOY</span>
+        Solidity + Hardhat
+      </p>
+      <p>Kronos28.sol · Registro de folios con 7 estados. Deploy a Sepolia testnet.</p>
+      <a href="packages/contracts/index.html">▶ Ver contracts</a>
+    </div>
+
+    <div class="section">
+      <h3>🔐 packages/crypto</h3>
+      <p class="status">
+        <span class="badge green">🟢 FUNCIONAL</span>
+        SHA-256 + Ed25519
+      </p>
+      <p>Hash, firma, verificación, generación de llaves. Compartido entre apps/web y apps/docs.</p>
+      <a href="packages/crypto/index.html">▶ Ver crypto</a>
+    </div>
+
+    <div class="section">
+      <h3>🎨 packages/ui</h3>
+      <p class="status">
+        <span class="badge yellow">🟡 EN CONSTRUCCIÓN</span>
+        React + Tailwind
+      </p>
+      <p>Componentes visuales compartidos. Paleta Obsidian & Gold.</p>
+      <a href="packages/ui/index.html">▶ Ver ui</a>
+    </div>
+
+  </div>
+
+  <!-- DOCS -->
+  <h2 class="section-title">📁 Documentación · Capítulos 00-09</h2>
+  <div class="sections">
+
+    <div class="section">
+      <h3>⚖️ 00 · LEGAL Y FINANZAS</h3>
+      <p class="status"><span class="badge red">🔴 ROJO</span> Prioridad #1</p>
+      <p>Constitución S.A. de C.V., cumplimiento CNBV, NOM-151, ISO 27001.</p>
+      <a href="00_LEGAL_Y_FINANZAS/index.html">▶ Entrar</a>
+    </div>
+
+    <div class="section">
+      <h3>💰 01 · FINANZAS Y CAPITAL</h3>
+      <p class="status"><span class="badge red">🔴 ROJO</span> Prioridad #2</p>
+      <p>Runway, burn rate, cap table, déficit -$38.5k USD.</p>
+      <a href="01_FINANZAS_Y_CAPITAL/index.html">▶ Entrar</a>
+    </div>
+
+    <div class="section">
+      <h3>🎨 02 · MARCAS Y ECOSISTEMA</h3>
+      <p class="status"><span class="badge yellow">🟡 AMARILLO</span> Prioridad #3</p>
+      <p>Separación KRONOS CERTIFICATE vs KRONOS PROTOCOL.</p>
+      <a href="02_MARCAS_Y_ECOSISTEMA/index.html">▶ Entrar</a>
+    </div>
+
+    <div class="section">
+      <h3>💻 03 · INGENIERÍA Y PRODUCTO</h3>
+      <p class="status"><span class="badge red">🔴 CONGELADO</span> Prioridad #4</p>
+      <p>Código, apps, contracts. Congelado hasta deuda = 0.</p>
+      <a href="03_INGENIERIA_Y_PRODUCTO/index.html">▶ Entrar</a>
+    </div>
+
+    <div class="section">
+      <h3>🔒 04 · SEGURIDAD Y OPERACIONES</h3>
+      <p class="status"><span class="badge red">🔴 ROJO</span> Prioridad #5</p>
+      <p>Rotación de llaves, vault, incident response.</p>
+      <a href="04_SEGURIDAD_Y_OPERACIONES/index.html">▶ Entrar</a>
+    </div>
+
+    <div class="section">
+      <h3>🏛️ 05 · GOBERNANZA Y COMUNIDAD</h3>
+      <p class="status"><span class="badge yellow">🟡 AMARILLO</span> Prioridad #6</p>
+      <p>Consejo Asesor (NO DAO), Risk Disclosure.</p>
+      <a href="05_GOBERNANZA_Y_COMUNIDAD/index.html">▶ Entrar</a>
+    </div>
+
+    <div class="section">
+      <h3>📚 06 · DOCUMENTACIÓN Y LORE</h3>
+      <p class="status"><span class="badge green">🟢 VERDE</span> Prioridad #7</p>
+      <p>Tesis fundacional, arquitectura técnica, lore.</p>
+      <a href="06_DOCUMENTACION_Y_LORE/index.html">▶ Entrar</a>
+    </div>
+
+    <div class="section">
+      <h3>🗄️ 07 · ARCHIVO FORENSE</h3>
+      <p class="status"><span class="badge yellow">🟡 AMARILLO</span> Prioridad #8</p>
+      <p>Logs inmutables, 127 eventos, cementerio legacy.</p>
+      <a href="07_ARCHIVO_FORENSE/index.html">▶ Entrar</a>
+    </div>
+
+    <div class="section">
+      <h3>📖 08 · MANUALES Y SOPS</h3>
+      <p class="status"><span class="badge green">🟢 VERDE</span></p>
+      <p>Manual usuario, técnico, operaciones, seguridad.</p>
+      <a href="08_MANUALES_Y_SOPS/index.html">▶ Entrar</a>
+    </div>
+
+    <div class="section">
+      <h3>🚀 09 · FASES DE EJECUCIÓN</h3>
+      <p class="status"><span class="badge green">🟢 VERDE</span></p>
+      <p>Roadmap Fase 0 a Fase 6. De contención 48h a legado 2099.</p>
+      <a href="09_FASES_EJECUCION/index.html">▶ Entrar</a>
+    </div>
+
+  </div>
+
+  <!-- BOTONES RÁPIDOS -->
+  <div style="text-align:center;margin-top:40px">
+    <a href="RISK_DISCLOSURE.md" style="display:inline-block;margin:8px;padding:12px 24px;
+       background:rgba(255,51,51,0.2);color:#ff6666;border:1px solid #ff3333;
+       border-radius:10px;text-decoration:none;font-family:monospace">
+       ⚠️ RISK DISCLOSURE
+    </a>
+    <a href="docs/INSTRUCCIONES-Y-TESIS.md" style="display:inline-block;margin:8px;padding:12px 24px;
+       background:rgba(201,162,39,0.2);color:#c9a227;border:1px solid #c9a227;
+       border-radius:10px;text-decoration:none;font-family:monospace">
+       📚 DOC MAESTRO
+    </a>
+    <a href="docs/ARBOL-NAVEGACION.md" style="display:inline-block;margin:8px;padding:12px 24px;
+       background:rgba(0,245,255,0.2);color:#00f5ff;border:1px solid #00f5ff;
+       border-radius:10px;text-decoration:none;font-family:monospace">
+       🗺 ÁRBOL
+    </a>
+    <a href="repertorio_vivo.json" style="display:inline-block;margin:8px;padding:12px 24px;
+       background:rgba(106,0,244,0.2);color:#a066ff;border:1px solid #6a00f4;
+       border-radius:10px;text-decoration:none;font-family:monospace">
+       📊 REPERTORIO
+    </a>
+  </div>
+
+</div>
+
+<div class="footer">
+  <div class="kintsugi">○_●</div>
+  <p>51% HUMANO · 49% IA · 100% REAL</p>
+  <p style="color:#c9a227;margin-top:10px;font-style:italic">
+    "El legado no se hereda. Se firma."
+  </p>
+  <p style="margin-top:15px;font-size:0.75em">
+    KRONOS v20.1 · Monorepo · Toluca/Lerma · 2026 · DMD-33 ●_○
+  </p>
+</div>
+
+</body>
+</html>

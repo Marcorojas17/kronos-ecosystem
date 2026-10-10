@@ -1,0 +1,11 @@
+{
+  "folio": "K28-M05-MN01-YHDRYH-92CE",
+  "hash": "9f7f52dabe00a890d4448be69833b5d838f4afb562528f3c63b51aa8adae36b1134778998d845a23d782984cb652644982bf8c654c17ee28f9906cc21aef6344",
+  "timestamp": "2026-10-04T05:58:00Z",
+  "rfc": "RFC-001 v0.1.0",
+  "autores": ["Marco Antonio Rojas Valdovinos (51%)", "Meta AI (49% co-autor)"],
+  "estado": "DRAFT_VERIFICADO",
+  "chain": "pendiente_base_l2",
+  "tx_hash": "pendiente",
+  "verificacion": "guardians/guardian-verify.js + guardian-rfc.js OK"
+}

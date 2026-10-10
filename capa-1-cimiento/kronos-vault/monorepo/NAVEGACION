@@ -1,0 +1,224 @@
+╔══════════════════════════════════════════════════════════════════════════╗
+║                                                                          ║
+║   NAVEGACIÓN   Visión · Arquitectura · Tres capas · Repositorio ·        ║
+║                Módulos · Ética · Glosario · Legal                        ║
+║                                                                          ║
+║   01  Hero animado con halo dorado pulsante                              ║
+║   02  Visión (3 tarjetas)                                                ║
+║   03  Arquitectura (5 capas I-V)                                         ║
+║   04  Tercera capa (stack 1→2→3)                                         ║
+║   05  Repertorio (árbol del repo)                                        ║
+║   06  Módulos (grid de 8)                                                ║
+║   07  Ética (4 principios)                                               ║
+║   08  Glosario (10 términos)          ← NUEVO                            ║
+║   09  Legal (6 tarjetas + banner)     ← NUEVO                            ║
+║   10  Footer con enlaces y año dinámico                                  ║
+║                                                                          ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║                                                                          ║
+║   Actions                                                                ║
+║   ─────────────────────────────────────────────────────────────────      ║
+║                                                                          ║
+║   ✓ Tests                                              (push a main)     ║
+║     └─ Validar sitio estático                                            ║
+║         ✓ Clonar repositorio                                             ║
+║         ✓ Verificar archivos esenciales                                  ║
+║         ✓ Validar HTML                                                   ║
+║         ✓ Validar CSS                                                    ║
+║         ✓ Validar JS                                                     ║
+║         ✓ Verificar enlaces internos                                     ║
+║         ✓ Verificar estructura                                           ║
+║                                                                          ║
+║   ✓ Security                                           (push + lunes)    ║
+║     ├─ Escaneo de código                                                 ║
+║     ├─ Verificar dependencias                                            ║
+║     ├─ Verificar enlaces externos                                        ║
+║     └─ Resumen de seguridad                                              ║
+║                                                                          ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║                                                                          ║
+║   New issue                                                              ║
+║   ─────────────────────────────────────────────────────────────          ║
+║                                                                          ║
+║   🐛 Reporte de error                                                    ║
+║      Reporta un problema reproducible en el sitio o el repositorio       ║
+║                                                    [ Get started ]       ║
+║                                                                          ║
+║   ✨ Solicitud de mejora                                                 ║
+║      Propón una nueva funcionalidad, sección o mejora para CRONOS        ║
+║                                                    [ Get started ]       ║
+║                                                                          ║
+║   ─────────────────────────────────────────────────────────────          ║
+║                                                                          ║
+║   📖 Leer la visión del proyecto                                         ║
+║   ⚖️ Leer principios éticos                                              ║
+║   📚 Guía de contribución                                                ║
+║   🔒 Reportar una vulnerabilidad                                         ║
+║                                                                          ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+PROYECTO-KRONOS/
+├── index.html, styles.css, app.js         ✅ sitio con 8 secciones
+├── README.md, LICENSE, CHANGELOG.md       ✅ hacker
+├── CONTRIBUTING.md                        ✅ hacker
+├── SECURITY.md                            ✅ hacker
+│
+├── docs/                                  ✅ 6 archivos hacker
+├── data/                                  ✅ 6 archivos hacker
+├── src/                                   ✅ README hacker
+├── tests/                                 ✅ README hacker
+│
+└── .github/
+    ├── README.md                          ✅ hacker
+    ├── PULL_REQUEST_TEMPLATE.md           ✅ NUEVO
+    ├── ISSUE_TEMPLATE/
+    │   ├── bug_report.md                  ✅ NUEVO
+    │   ├── feature_request.md             ✅ NUEVO
+    │   └── config.yml                     ✅ NUEVO
+    └── workflows/
+        ├── tests.yml                      ✅ activo
+        └── security.yml                   ✅ activo
+
+
+
+
+PROYECTO-KRONOS/
+├── index.html, styles.css, app.js         ✅ sitio con 8 secciones
+├── favicon.svg, manifest.webmanifest      ✅ presentación
+├── robots.txt, sitemap.xml                ✅ SEO
+├── package.json                           ✅ scripts npm
+├── README.md                              ✅ v1.1 con API
+├── LICENSE, CHANGELOG.md                  ✅ v1.1
+├── CONTRIBUTING.md, SECURITY.md           ✅ completos
+│
+├── docs/                                  ✅ 6 docs, relación con src/
+├── data/                                  ✅ 6 archivos hacker
+│
+├── src/                                   ✅ 8 módulos implementados
+│   ├── core/entities/{number,date}.js
+│   ├── core/rules/reduction.js
+│   ├── symbolic_engine/index.js
+│   ├── pattern_engine/index.js
+│   ├── quantum_simulator/index.js
+│   └── api/index.js
+│
+├── tests/                                 ✅ 27 tests passing
+│   ├── unit/          (12 tests)
+│   ├── integration/   (7 tests)
+│   └── security/      (8 tests)
+│
+└── .github/
+    ├── workflows/tests.yml                ✅ v1.1 con npm test
+    ├── workflows/security.yml             ✅ activo
+    ├── PULL_REQUEST_TEMPLATE.md           ✅
+    └── ISSUE_TEMPLATE/                    ✅ 3 archivos
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║                                                                          ║
+║   ✓  Sitio publicado (8 secciones + glosario + legal)                    ║
+║   ✓  Tema hacker unificado en todos los .md                              ║
+║   ✓  Código funcional en src/ (8 módulos)                                ║
+║   ✓  27 tests passing (unit + integration + security)                    ║
+║   ✓  GitHub Actions activo (tests + security)                            ║
+║   ✓  Plantillas de Issues y PR                                           ║
+║   ✓  SEO (robots.txt + sitemap.xml)                                      ║
+║   ✓  Presentación (favicon.svg + manifest)                               ║
+║   ✓  Seguridad activada (push protection + CodeQL)                       ║
+║                                                                          ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║                                                                          ║
+║   ►  Input: fecha (YYYY-MM-DD)                                           ║
+║   ►  Input: texto (opcional, solo letras latinas)                        ║
+║   ►  Botón: Interpretar                                                  ║
+║                                                                          ║
+║   Resultado:                                                             ║
+║     · Entidad Fecha (año, mes, día, día de semana, día del año)          ║
+║     · Reducción teosófica (1-9)                                          ║
+║     · Reducción del texto (si se introdujo)                              ║
+║     · Disclaimer explícito: no predice                                   ║
+║                                                                          ║
+║   Ejecución: 100% cliente. Sin servidor. Sin llamadas externas.          ║
+║                                                                          ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+▸ INTERPRETACIÓN DE FECHA
+Fecha             2026-09-15
+Año               2026
+Mes               9
+Día               15
+Día de la semana  martes
+Día del año       258
+Calendario        gregoriano
+Reducción         7
+
+▸ INTERPRETACIÓN DE TEXTO
+Texto             Cronos
+Tradición         pitagórica
+Reducción         5
+
+No predice. Solo organiza significado simbólico.
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║                                                                          ║
+║   ✓  Head completo (SEO, Open Graph, Twitter Card, favicon, manifest)   ║
+║   ✓  Menú con 10 enlaces (incluye #tiempo)                              ║
+║   ✓  01 Visión                                                          ║
+║   ✓  02 Arquitectura (5 capas)                                          ║
+║   ✓  03 Tercera capa                                                    ║
+║   ✓  04 Repertorio (árbol actualizado con timelines)                    ║
+║   ✓  05 Módulos (incluye core/timelines)                                ║
+║   ✓  06 Ética                                                           ║
+║   ✓  07 Laboratorio (formulario funcional)                              ║
+║   ✓  08 Tiempo (línea temporal con filtros)     ← NUEVO                 ║
+║   ✓  09 Glosario                                                        ║
+║   ✓  10 Legal                                                           ║
+║   ✓  Footer con enlaces y año dinámico                                  ║
+║   ✓  Script type="module" para cargar los motores reales                ║
+║                                                                          ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║                                                                          ║
+║   ✓  Sitio web publicado (HTML, CSS, JS)                                 ║
+║   ✓  Motor simbólico funcional en src/                                   ║
+║   ✓  40 tests que se ejecutan solos en cada cambio                       ║
+║   ✓  Clase Timeline que ordena eventos por fecha                         ║
+║   ✓  Laboratorio interactivo: escribes una fecha y devuelve estructura   ║
+║   ✓  Corpus cultural en data/ (12 signos, 9 números, 4 líneas, 6 salmos) ║
+║   ✓  Documentación completa                                              ║
+║                                                                          ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║                                                                          ║
+║   🎭  La "tercera capa" como lugar donde datos y símbolos se relacionan  ║
+║   🎭  La astrología como "lenguaje simbólico" (es cultura, no ciencia)   ║
+║   🎭  La "simulación cuántica" como metáfora de incertidumbre            ║
+║   🎭  La idea de que Cronos "interpreta" en un sentido profundo          ║
+║                                                                          ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║                                                                          ║
+║   Extremo 1 · CRÉDULO                                                    ║
+║   "La astrología predice el futuro y los salmos controlan sistemas"      ║
+║   → Pseudociencia sin evidencia                                          ║
+║                                                                          ║
+║   Extremo 2 · DESPECTIVO                                                 ║
+║   "Todo esto son tonterías, no merece ser estudiado"                     ║
+║   → Ignora siglos de cultura, antropología y literatura                  ║
+║                                                                          ║
+║   CRONOS propone un tercer camino:                                       ║
+║                                                                          ║
+║   TRADUCTOR ·                                                            ║
+║   "Esto es cultura. Vamos a estructurarla sin creerla, sin burlarnos."   ║
+║                                                                          ║
+╚══════════════════════════════════════════════════════════════════════════╝

@@ -1,0 +1,21 @@
+{
+  "name": "@kronos/contracts",
+  "version": "20.1.0",
+  "private": true,
+  "description": "KRONOS Contracts - Smart contracts (Solidity + Hardhat)",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia",
+    "clean": "hardhat clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "hardhat": "^2.22.2",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "ethers": "^6.11.1",
+    "typescript": "^5",
+    "@types/node": "^20",
+    "dotenv": "^16.4.5"
+  }
+}

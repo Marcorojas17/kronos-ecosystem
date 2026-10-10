@@ -1,0 +1,133 @@
+commit 6eac340a3ce3265507534d57f5849481bb0bc29a 
+(HEAD -> main)
+Merge: 00121a0 f64268c
+Author: Marco Rojas <tu@email.com>
+Date:   Tue Sep 29 06:45:10 2026 +0000
+
+    CICLO 33: Guardita 14710 <-> Plaza IA 086 AN
+CLADOS
+
+ *Fix                           |   0
+ .dockerignore                  |   8 +
+ .env.example                   |  17 +
+ .gitignore                     |  22 +
+ .nojekyll                      |   0
+ AVISO_LEGAL.md                 |  26 +
+ Dockerfile                     |  25 +
+ Environment                    |   0
+ KRONOS/agentes/custodia.log    |   4 +
+ .../enjambre_autopoietico.py   | 135 ++
+ ...stado_mental_colectivo.json |  13 +
+ .../mercadopago_client.py      |  35 +
+ LICENSE                        |  54 +
+ "L\303\211AME.md"              |  38 +
+ MP_ACCESS_TOKEN                |   0
+ ...OS-MT01JAAF_a4ff808e.pdf.md |  56 +
+ ...RONOS-MT01JAAF-a4ff808e.zip | Bin 0 -> 10007
+ bytes
+ README.md                      |  13 +
+ SECURITY.md                    |  37 +
+ actualizar_marketplace.py      |  32 +
+ ...README_MT01JAAF_a4ff808e.md |  16 +
+ agentes/agente_mt01jaaf.py     |  42 +
+ .../enjambre_autopoietico.py   | 132 ++
+ ...cadena_custodia_mt01jaaf.py |  42 +
+ app.py                         | 115 ++
+ audit/.gitkeep                 |   0
+ ...NOM_PVA_5204160405358537.md |  64 +
+ ...05358537_KRONOS-MT01JAAF.md |  38 +
+ audit/README.md                |  71 ++
+ audit/__init__.py              |   0
+ audit/cadena_custodia.log      | 547 +++++++++
+ ...en_PVA_5204160405358537.pdf |  85 ++
+ ...stado_mental_colectivo.json |  14 +
+ ..._folio_5204160405358537.png | Bin 0 -> 3301 
+bytes
+ ...5358537_KRONOS-MT01JAAF.png | Bin 0 -> 86386
+ bytes
+ audit/sello_kronos.json        |  39 +
+ cadena_sha256.txt              |   1 +
+ cola_reintento/.gitkeep        |   0
+ config/genesis_hash.json       |  13 +
+ config/vault_config.json       |  18 +
+ contracts/PVAContract.sol      | 246 ++++
+ contracts/README.md            |  80 ++
+ core/__init__.py               | 143 +++
+ core/blockchain_verifier.py    |  67 +
+ core/genesis_breather.py       | 270 ++++
+ core/hash_to_semantic.py       |  33 +
+ core/perito_seal.py            |  22 +
+ core/pva_audit_trail.py        | 228 ++++
+ ...RONOS-MT01JAAF_a4ff808e.txt |  21 +
+ docker-compose.yml             |  10 +
+ ...01_kybalion_translation.txt |  27 +
+ docs/API_DOCS.md               |  94 ++
+ docs/KRONOS_360_LAWS.md        |  38 +
+ docs/LEGAL_FRAMEWORK.md        | 105 ++
+ ...NOM151_ISO_DOCUMENTATION.md |  90 ++
+ docs/PRIVACY_POLICY.md         | 104 ++
+ docs/THREAT_MODEL.md           | 104 ++
+ ejercito/README.md             |  16 +
+ ejercito/ataque/deploy.py      |   5 +
+ ejercito/comando/presidente.py |   9 +
+ ejercito/defensa/muralla.py    |   4 +
+ ejercito/ejercito.py           |  34 +
+ .../inteligencia/scraper.py    |   3 +
+ .../abastecimiento.py          |   3 +
+ ...ONOS-MT01JAAF_a4ff808e.json |  21 +
+ .../manifiesto_17e5729e.txt    |   9 +
+ examples/primer_manifiesto.txt |   4 +
+ generar_pagos_1_2.py           |  49 +
+ generar_pagos_reales.py        |  19 +
+ guardianes/__init__.py         |  12 +
+ guardianes/guardian_acceso.py  |   7 +
+ guardianes/guardian_firma.py   |   7 +
+ guardianes/guardian_memoria.py |  10 +
+ guardianes/guardian_tiempo.py  |   5 +
+ index.html                     |  64 +
+ index.html.bak                 |  12 +
+ .../LEGAL_MT01JAAF_a4ff808e.md |  53 +
+ ...README_MT01JAAF_a4ff808e.md |  40 +
+ kronos-legado.digital/llms.txt |  44 +
+ legacy/actualizar_botones.py   |  40 +
+ .../actualizar_verificacion.py |  46 +
+ ...zar_verificacion_detalle.py |  43 +
+ ...izar_verificacion_nivel2.py |  57 +
+ legacy/botones_gratis.py       |  32 +
+ legal/AVISO_LEGAL.md           |  20 +
+ ...NTRATO_ADHESION_MP_15-10.md |  48 +
+ legal/DISCLAIMER_SOBERANIA.md  |  17 +
+ legal/LICENCIA_SOBERANA.md     |  11 +
+ ..._REEMBOLSO_PROFECO_15-10.md |   5 +
+ legal/PRIVACIDAD.md            |  12 +
+ ...RO_MARCA_IMPI_WIPO_15-10.md |  10 +
+ legal/TERMINOS.md              |  11 +
+ ...PIEDAD_INTELECTUAL_15-10.md |   6 +
+ ...2_FOLIOS_NO_DINERO_15-10.md |   6 +
+ .../VACIO3_PRIVACIDAD_15-10.md |   7 +
+ ..._EJERCITO_PALABRAS_15-10.md |   5 +
+ .../VACIO5_TERMINOS_15-10.md   |   6 +
+ ...O6_CADENA_CUSTODIA_15-10.md |   6 +
+ llms.txt                       |  60 +
+ manifesto.js                   |  11 +-
+ oraculo_unificado.py           |   5 +
+ ...README_MT01JAAF_a4ff808e.md |   5 +
+ ...4ff808e_20260905101624.json |  15 +
+ pagos/pagos_mt01jaaf.py        |  40 +
+ ..._PERITAJE_KRONOS_V18.pdf.md |  19 +
+ ...E-KRONOS-V18-ENTREGABLE.zip | Bin 0 -> 55714
+ bytes
+ .../LINEA_TIEMPO.md            |  15 +
+ .../evidencia/INVENTARIO.md    |  15 +
+ ..._CUSTODIA_ISO27037_15-10.md |   3 +
+ .../DICTAMEN_TECNICO.md        |   5 +
+ .../tecnico/freeze_100-10.txt  | 179 +++
+ .../fusion_legacy_100-10.txt   |   6 +
+ ...01_kybalion_translation.txt |  99 ++
+ prompts_library/README.md      |  45 +
+ pyproject.toml                 |  36 +
+ render.yaml                    |  24 +
+ requirements.txt               |   8 +
+ requisitos.txt                 |   4 +
+ robots/__init__.py             |  17 +
+ robots/ejecutar.py             |  32 +

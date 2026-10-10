@@ -1,0 +1,16 @@
+{
+  "name": "@kronos/crypto",
+  "version": "20.1.0",
+  "private": true,
+  "description": "KRONOS Crypto - SHA-256 + Ed25519 compartido entre apps",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "scripts": {
+    "test": "echo 'no tests yet'",
+    "clean": "rm -rf node_modules"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20"
+  }
+}

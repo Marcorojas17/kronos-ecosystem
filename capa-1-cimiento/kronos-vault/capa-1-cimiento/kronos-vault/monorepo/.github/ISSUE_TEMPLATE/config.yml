@@ -1,0 +1,23 @@
+# ═══════════════════════════════════════════════════════════════════════════
+# CRONOS · Configuración del selector de issues · v1.0
+# Define qué opciones ve el usuario al pulsar "New issue"
+# ═══════════════════════════════════════════════════════════════════════════
+
+blank_issues_enabled: false
+
+contact_links:
+  - name: 📖 Leer la visión del proyecto
+    url: https://marcorojas17.github.io/PROYECTO-KRONOS/#vision
+    about: Antes de proponer cambios, entiende qué es CRONOS y qué no es.
+
+  - name: ⚖️ Leer principios éticos
+    url: https://marcorojas17.github.io/PROYECTO-KRONOS/#etica
+    about: Los cuatro principios que el proyecto respeta y los ocho límites que no cruza.
+
+  - name: 📚 Guía de contribución
+    url: https://github.com/marcorojas17/PROYECTO-KRONOS/blob/main/CONTRIBUTING.md
+    about: Cómo contribuir con rigor: convenciones, ramas, commits y estilo.
+
+  - name: 🔒 Reportar una vulnerabilidad
+    url: https://github.com/marcorojas17/PROYECTO-KRONOS/security/advisories/new
+    about: Usa el reporte privado de vulnerabilidades, no un issue público.

@@ -1,0 +1,127 @@
+# ═══════════════════════════════════════════════════════════════════════════
+# CRONOS · Workflow de seguridad · v1.0
+# Escaneo de vulnerabilidades + validación de enlaces externos
+# ═══════════════════════════════════════════════════════════════════════════
+
+name: Security
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 9 * * 1'  # Cada lunes a las 09:00 UTC
+  workflow_dispatch:
+
+jobs:
+  escaneo-codigo:
+    name: Escaneo de código
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Inicializar CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: javascript
+
+      - name: Ejecutar análisis CodeQL
+        uses: github/codeql-action/analyze@v3
+
+      - name: Resumen del escaneo
+        run: echo "✓ Análisis CodeQL completado para JavaScript"
+
+  verificar-dependencias:
+    name: Verificar dependencias
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Buscar dependencias externas
+        run: |
+          echo "═══ Buscando dependencias externas ═══"
+          echo "→ Recursos externos referenciados en index.html:"
+          grep -oE 'https://[^"]*' index.html | sort -u || echo "  (ninguno)"
+
+          echo ""
+          echo "→ Verificando que no haya archivos package.json sin auditar:"
+          if [ -f "package.json" ]; then
+            echo "  ⚠ package.json encontrado — se auditará en otro workflow"
+          else
+            echo "  ✓ Sin package.json (proyecto sin dependencias npm)"
+          fi
+
+  verificar-enlaces-externos:
+    name: Verificar enlaces externos
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Verificar enlaces del README y del sitio
+        run: |
+          echo "═══ Verificando enlaces externos ═══"
+
+          # Extraer URLs de index.html
+          urls=$(grep -oE 'https://[^"'"'"' >]+' index.html | sort -u || true)
+
+          if [ -z "$urls" ]; then
+            echo "✓ Sin enlaces externos en index.html"
+            exit 0
+          fi
+
+          errores=0
+          for url in $urls; do
+            # Ignorar data URIs y anchors
+            case "$url" in
+              data:*|*github.io/PROYECTO-KRONOS*|*fonts.googleapis.com*|*fonts.gstatic.com*)
+                continue
+                ;;
+            esac
+
+            status=$(curl -s -o /dev/null -w "%{http_code}" -L --max-time 10 "$url" || echo "000")
+            if [ "$status" -ge 400 ] || [ "$status" = "000" ]; then
+              echo "✗ $url → HTTP $status"
+              errores=$((errores+1))
+            else
+              echo "✓ $url → HTTP $status"
+            fi
+          done
+
+          if [ $errores -gt 0 ]; then
+            echo ""
+            echo "⚠ $errores enlace(s) con problemas (no bloquea el workflow)"
+          fi
+
+          echo ""
+          echo "✓ Verificación de enlaces completada"
+
+  resumen-seguridad:
+    name: Resumen de seguridad
+    runs-on: ubuntu-latest
+    needs: [escaneo-codigo, verificar-dependencias, verificar-enlaces-externos]
+
+    steps:
+      - name: Resumen final
+        run: |
+          echo ""
+          echo "═══════════════════════════════════════════════════"
+          echo "  CRONOS · Security"
+          echo "═══════════════════════════════════════════════════"
+          echo "  ✓ Análisis estático de código (CodeQL)"
+          echo "  ✓ Verificación de dependencias"
+          echo "  ✓ Validación de enlaces externos"
+          echo "═══════════════════════════════════════════════════"
+          echo ""
+          echo "  Los resultados detallados están en la pestaña"
+          echo "  'Security' del repositorio."
+          echo ""
